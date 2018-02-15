@@ -1,0 +1,383 @@
+/* 
+  Localizable.strings
+  KSU-Staff
+
+  Created by EJ-Mac book on 9/22/14.
+  Copyright (c) 2014 E-Jawdah. All rights reserved.
+*/
+///////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////login////////////////////////////////////////////////
+usernameLblText                         ="Username";
+passwordLblText                         ="Password";
+forgetPWLblText                         ="Forget Password";
+DocInfoLblText                          ="Document Status Inquiry";
+loginLblText                            ="Login";
+FingerPrintLblText                      ="Use Fingerprint";
+FingerPrintErrorText                    ="You have to login with username & password Please.";
+userNameMandatoryMsg                    ="Enter correct username/ password";
+passwordMandatoryMsg                    ="Enter correct username/ password";
+////////////////////////////////////////Doc Inquiry///////////////////////////////////////////////
+ByIDLblText                              ="Inquiry  By Document ID";
+byLogBookLblText                         ="Inquiry By LogBook ID";
+docIDText                                ="Document ID";
+docIDErrorText                           ="Enter Document ID";
+docOrganizationText                      ="Document Organization ID";
+externalDocOrganizationSearchText        ="Organization Name";
+externalDocOrganizationSearchErrorText   ="Please Select Organization Name";
+docOrganizationErrorText                 ="Enter Document Organization ID";
+noDocOrganizationText                    ="No Organization with this ID";
+logBookText                              ="LogBook ID";
+logBookErrorText                         ="Enter LogBook ID";
+SearchButtonText                         ="Search";
+BackButtonText                           ="Back";
+ChooseButtonText                         ="Choose";
+logBookIDHeaderText                      ="Doc Number";
+logBookDateHeaderText                    ="Doc Date";
+logBookStatusHeaderText                  ="Doc Status";
+////////////////////////////////////////dashboard////////////////////////////////////////////////
+profileDBText                            ="Profile";
+salaryDBText                             ="Salary";
+paymentDBText                            ="Payments";
+permissionsDBText                        ="Permissions";
+requestsDBText                           ="Requests";
+delegationsDBText                        ="Delegations";
+vacationsDBText                          ="Vacations";
+schduleDBText                            ="Schedule";
+TasksDBText                              ="Tasks";
+passpordDBText                           ="Passport Information";
+ticketsDBText                            ="Flight Tickets Eligibility";
+calenderDBText                           ="Calendar";
+notificationDBText                       ="Notification";
+finInfoDBText                            ="Financial Info";
+custodyDBText                            ="Custody Record";
+VehiclesDBText                           ="Assigned Vehicles";
+copyRightsText                           ="King Saud University";
+NormalText                               ="Normal";
+EmergencyText                            ="Emergency";
+nafeeDBText                                ="Nafee";
+
+////////////////////////////////////////Profile////////////////////////////////////////////////
+profileTitleText                         ="Profile";
+PresonalInfoText                         ="Personal Information";
+JobInfoText                              ="Job Information";
+
+FullNameText                             ="Full Name";
+NationalityText                          ="Nationality";
+BirthDateText                            ="Birth Date";
+BirthDateHijryText                       ="Hijri Birth Date";
+SocialNoText                             ="ID Number";
+SocialExpireText                         ="ID Number Expiry Date";
+TelNoText                                ="Telephone No";
+MobNoText                                ="Mobile No";
+AlterEmailText                           ="Alternative Email";
+webSiteText                              ="Personal Website";
+
+EmpNoText                                ="Employee ID";
+RankText                                 ="Rank";
+GradeText                                ="Grade";
+HiringDateText                           ="Hiring Date";
+HiringDateHijryText                      ="Hijri Hiring Date";
+JobTitleText                             ="Job Title";
+DepartmentText                           ="Department";
+SectionText                              ="Section";
+StatusText                               ="Status";
+StartWorkText                            ="Start Work";
+StartWorkHijryText                       ="Hijri Start Work";
+BankAccNoText                            ="Bank Account No";
+BankNameText                             ="Bank Name";
+//////////////////////////////////Salary////////////////////////////////////////
+SalaryTitleText                          ="Salary";
+SalaryPaymentInfoText                    ="Payment Info";
+SalaryAllowanceText                      ="Allowances";
+SalaryDeductionText                      ="Deductions";
+SalaryTotalsText                         ="Total";
+
+DateText                                 =" Date";
+TypeText                                 =" Type";
+BankText                                 =" Bank";
+
+CodeText                                 ="Code";
+DescriptionText                          ="Description";
+ValueText                                ="Value";
+
+TotalNetText                             ="Total Net";
+TotalDiscountText                        ="Total Deduction";
+TotalDeserveText                         ="Total Deserve";
+////////////////////////////////////////Payment////////////////////////////////////////////////
+PaymentPaidText                          ="Paid";
+PaymentNotPaidText                       ="Not Paid";
+PaymentItemNumberText                    =" Number";
+PaymentItemDescripText                   =" Description";
+PaymentItemAmountText                    =" Amount";
+PaymentItemDateText                      =" Date";
+PaymentItemIndicatorText                 =" Remarks";
+////////////////////////////////Delegation////////////////////////////////////////////
+DelegationTitleText                      ="Delegations";
+AddDelegationTitleText                   ="Add Delegation";
+EditDelegationTitleText                  ="Edit Delegation";
+EditDelegationButtonText                  =" Edit ";
+DelegationNoDataFoundMsg                 ="No Delegations";
+delegationStartTimeText                  ="From:";
+delegationEndTimeText                    ="To:";
+delegationServiceNameText                ="Service Name:";
+delegationRequestIDText                  ="Request No:";
+delegationActivateStatusText             ="Activated";
+delegationDeactivateStatusText           ="Deactivated";
+EmptyButtonText                          ="Empty";
+AddButtonText                            ="Add";
+EditButtonText                           ="Edit";
+DeleteButtonText                           ="delete";
+
+validateDateError                        ="End Date must be greater than or equal to start date";
+NoDelegationsError                       ="No Delegations with this data";
+delegationUserNameMandatoryMsg           ="Please Enter UserName";
+loadUserDataErrorMsg                     ="Please load user data from server";
+delegationUserNameMinCharsMsg            ="Please Enter at least 3 characters";
+delegationServiceNameMandatoryMsg        ="Please Choose Service Name";
+delegationRequestIDMandatoryMsg          ="Please Enter Request ID";
+delegationStartDateMandatoryMsg          ="Please Enter Delegation Start Date";
+delegationEndDateMandatoryMsg            ="Please Enter Delegation End Date";
+deleteDelegationMsgText                  ="Do you want to delete this delegation";
+ServicesTitleText                        ="Services";
+ServicesNotFountMsg                      ="No service found with this name";
+UsersTitleText                           ="Users";
+UsersNotFountMsg                         ="No users with this name / username / job code";
+UserSearchErrorText                      ="Please select UserName";
+AddDelegationConfirmationMsg             ="Delegation has been added";
+EditDelegationConfirmationMsg            ="Delegation has been updated";
+DeleteDelegationConfirmationMsg          ="Delegation has been deleted";
+////////////////////////////////Permissions////////////////////////////////////////////
+PermissionsTitleText                     ="Permissions";
+PermissionsNoDataFoundMsg                ="No Permissions";
+////////////////////////////////Schedule////////////////////////////////////////////
+scheduleTitleText                        ="Schedule";
+scheduleSaturdayText                     ="Sat";
+scheduleSundayText                       ="Sun";
+scheduleMondayText                       ="Mon";
+scheduleTuesdayText                      ="Tue";
+scheduleWednesdayText                    ="Wed";
+scheduleThursdayText                     ="Thu";
+scheduleCourseCodeText                   ="Course code:";
+scheduleClassBuildingText                ="Building:";
+scheduleClassPartitionText               ="Partition:";
+scheduleClassFloorText                   ="Floor:";
+scheduleClassRoomText                    ="Room:";
+scheduleStartTimeText                    ="From:";
+scheduleEndTimeText                      ="To:";
+scheduleSectionIDText                    ="Section No:";
+scheduleNoDataFoundMsg                   ="No Schedule";
+/////////////////////////////////////Vacations////////////////////////////////////////////////
+VacationTitleText                        ="Vacations";
+VacationNormalText                       ="Normal Vacation";
+VacationEmergencyText                    ="Emergency Vacation";
+/////////////////////////////////////Requests////////////////////////////////////////////////
+RequestTitleText                         ="Requests";
+RequestNoDataFoundMsg                    ="No Requests";
+RequestActionsNoDataFoundMsg             ="No Actions";
+RequestDetailsNoDataFoundMsg             ="No Details";
+RequestServiceNameText                   ="Service";
+RequestSenderNameText                    ="Sender";
+RequestStartTimeText                     ="From";
+RequestEndTimeText                       ="To";
+RequestIDText                            ="Request ID";
+MyRequestsButtonText                     ="My Requests";
+ProcessedRequestsButtonText              ="Processed";
+RecievedRequestsButtonText               ="Recieved";
+CompletedRequestsButtonText              ="Completed";
+RequestDateText                          ="Request Date:";
+RequestActionsTitleText                  ="Request Actions List";
+RequestDetailsTitleText                  ="Request Details";
+RequestActionText                        ="Action:";
+RequestActionReasonText                  ="Reason:";
+RequestActionDateText                    ="Date:";
+RequestRequestIDText                     ="Request No:";
+RequestTypeText                          ="Requester";
+RequestNumberText                        ="Row";
+RequestStatusText                        ="Details";
+/////////////////////////////////////Menu items////////////////////////////////////////////////
+MenuItemHomeText                         ="Home";
+MenuItemEditProfileText                  ="Edit Profile";
+MenuItemChangePWText                     ="Change Password";
+MenuItemDocInquiryText                   ="Document Status Inquiry";
+MenuItemContactsText                     ="Contacts";
+MenuItemNotifText                        ="Notifications";
+MenuItemLanguageText                     ="English";
+MenuItemSupportText                      ="IT Support";
+MenuItemReportProbText                   ="Comments";
+MenuItemAboutText                        ="About";
+MenuItemLogoutText                       ="Logout";
+MenuItemSettingText                      ="Settings";
+MenuTitleText                            ="Menu";
+/////////////////////////////////////Notification////////////////////////////////////////////////
+DeleteNotification                        ="All Notifications have been deleted";
+/////////////////////////////////////Calender////////////////////////////////////////////////
+CalenderTitleText                        ="Calendar";
+DateFromText                             ="Gregorian";
+DateToText                               ="Hijri";
+/////////////////////////////////////Task////////////////////////////////////////////////
+TaskTitleText                            ="Tasks";
+TaskNameText                             =" Task";
+TaskDeptText                             =" Department";
+TaskDateText                             =" Date";
+TaskStatusText                           =" Status";
+TaskRemarksText                          =" Remarks";
+/////////////////////////////////////Passport////////////////////////////////////////////////
+PassportTitleText                        ="Passport Information";
+PassportNameText                         ="Name";
+PassportNoText                           ="Passport No";
+PassportExDateText                       ="Expiry Date";
+/////////////////////////////////////Ticket////////////////////////////////////////////////
+TicketTitleText                          ="Flight Tickets Eligibility";
+TicketNameText                           ="Name";
+TicketTypeText                           ="Ticket Type";
+TicketContYearText                       ="Year";
+/////////////////////////////////Change password////////////////////////////////////////////////
+ChPwTitleText                            ="Change Password";
+ChPwOldPwText                            ="Old password";
+ChPwNewPwText                            ="New password";
+ChPwConfirmPWText                        ="Confirm new password";
+VerifyButtonText                         ="Verify";
+passwordMandatoryChMsg                   ="Enter old password";
+newPWMandatoryMsg                        ="Enter new password";
+confirmPWMandatoryMsg                    ="Enter confirm new password";
+confirmPW_notMatchMsg                    ="Confirm new password doesn't match";
+confirmOldPWMatchMsg                     ="New password must differ from old password";
+ChangePWDoneMsgText                      ="Password changed successfully";
+PWminLenghtMsgText                       ="Password must be more than 6 characters";
+/////////////////////////////////It support////////////////////////////////////////////////
+ItSupportMsgText                         ="Write your message";
+SendButtonText                           ="Send";
+ITSupportSuccMsgText                     ="Your message has been sent successfully";
+ItSupportSubjText                        ="Subject";
+ItSupportSubMandMSG                      ="Enter the subject";
+ItSupportTextMandMSG                     ="Enter your message";
+/////////////////////////////////Report Problem////////////////////////////////////////////////
+OpenCameraText                           ="Take Photo";
+OpenPhotoLibText                         ="Choose Existing";
+ImageNeededMsgText                       ="Select Image";
+/////////////////////////////forget password/////////////////////////////////////////////
+AlterEmailMandtoryMsg                    ="Enter alternative email";
+forgetPWDoneMsg                          ="Your password has been sent to your mobile";
+userNameMandatoryFPMsg                   ="Enter correct username";
+forgetPWVerifyText                       ="Verification Code";
+verificationSendingMsg                   ="Verification code sent to your mobile";
+verifyCodeMandatoryFPMsg                 ="Enter verification code";
+/////////////////////////////////custody scrreen////////////////////////////////////////////////
+custodyDescText                          ="Description";
+custodyQuantityText                      ="Quantity:";
+custodyRemarksText                       ="Remarks";
+custodyDontExistMsg                      ="No assigned custody";
+///////////////////////////////////Language///////////////////////////////////////////
+currentLangText                          ="Application language";
+changeLangMsgText                        ="Do you want to change application language?";
+changeLangDoneMsgText                    ="Change Language done successfully";
+changeTotalsDBText                       ="Show animated values";
+//////////////////////////////////send Claim///////////////////////////////////////////
+sendClaimTitleTxt                        ="Send Claim";
+sendClaimLblTxt                          ="Write your salary claim";
+sendClaimDoneMsgTxt                      ="Your claim message is sent successfully";
+sendClaimValidateMsgTxt                  ="Enter salary claim";
+//////////////////////////////////Claim List///////////////////////////////////////////
+claimLstTitleTxt                         ="Claim list";
+claimLstDescpTxt                         ="Description";
+claimLstDateTxt                          ="Date";
+claimLstTicketNoTxt                      ="Claim No.";
+//////////////////////////////////////About///////////////////////////////////////
+aboutTxtMsg                              ="The Application offers several services to the faculty members and employees in Integration with the administrative and financial systems of King Saud University\n\rThe application allows the user to access his personal profile and show his job information, custody records .salary ordered by months and also view his vacations balance whether normal or emergency vacations.\n\rThe system allows to view payments ordered by years and shows important contacts list of King Saud University. Also the application provides IT support services and views the calendar in addition to showing the availability of employee transportation vehicles (if available).\n\rThe application is available in both (Arabic- English) languages and allows the employee to adjust his account settings.\n\rThere is also 'change password' option which enables the user to modify his account password and also 'Forget password' option which enables the user to retrieve his account password using the e-mail of the user of the King Saud University.";
+
+///////////////////////////////////vehicles//////////////////////////////////////////////
+vehicleNoText                            ="Vehicle No.";
+vehicleTypeText                          ="Vehicle Type";
+vehicleAssignText                        ="Assign Date";
+vehicleDeliveryText                      ="Delivery Date";
+//////////////////////////////////calendar JSON/////////////////////////////////
+calStartFirst                            ="Beginning of the first semester";
+calNationalDay                           ="The National day holiday";
+calStartAdah                             ="Eid Al-Adha holiday";
+calEndAdah                               ="Beginning of the school year after Eid Al-Adha holiday";
+calFirstExam                             ="First semester exams";
+calStartMidVaca                          ="Beginning of the mid-year vacation";
+calStartSecond                           ="Beginning of the second semester";
+calStartSecondMidVaca                    ="Beginning of the second midterm vacation";
+calEndSecondMidVaca                      ="Beginning of the school year after the second midterm vacation";
+calSecondExam                            ="Second semester exams";
+calStartFinalVaca                        ="End of school year vacation";
+calStartYear                             ="Beginning of the school year";
+calStartFirstMidVaca                     ="Beginning of the first midterm vacation";
+calEndFirstMidVaca                       ="Beginning of the school year after the first midterm vacation";
+
+calLastAppology                          ="The deadline to apologize for the classroom and/or a course";
+calStartPrepareSubjects                  ="Prep. subjects' exams start date";
+calEndPrepareSubjects                    ="Prep. subjects' exams end date";
+calStartTeachersVaca                     ="Begin of the educational staff vacation";
+calEndTeachersVaca                       ="Educational staff resume date";
+
+calStartSummarCourse                     ="Summer semester registration";
+calStartStudy                            ="The beginning of study";
+calStartFatrEidVaca                      ="Eid Al-Fitr holiday";
+calEndFatrEidVaca                        ="Classes resume";
+calStartExam                             ="Beginning of final exams";
+calEndExam                               ="End of final exams";
+
+calStartFirstNew                         ="Beginning of the study for the first semester";
+calStartSecondNew                        ="Beginning of the study for the second semester";
+calLastAppologyYearly                    ="The deadline to apologize for the classroom and/or a course(yearly)";
+// add new values for calendar
+calFirstTermStartTrans                     ="Beginning of the transfer period between colleges and departments";
+calFirstTermEndTrans                     ="End of the transfer period between colleges and departments";
+calFirstTermStartGeneralExam                     ="Beginning of general preparation materials tests";
+calSecondTermStartTrans                     ="Beginning of the transfer period between colleges and departments";
+calSecondTermEndTrans                     ="End of transfer period between colleges and departments";
+calSecondTermStartGeneralExam                     ="Beginning of general preparation materials tests";
+calSecondTermStartFinalExam                     ="Beginning of final exams";
+calSecondTermEndFinalExam                     ="End of final exams";
+calStartUniversityTrans                     ="Beginning of the application period for transfer from outside the university";
+calEndUniversityTrans                     ="End of the application period for transfer from outside the university";
+calNewAcademicYear                     ="Beginning of the new academic year";
+calSummerStart                     ="Beginning of the study for the summer semester";
+calSummerLastApology                     ="Last date for an apology for the summer semester or for a course";
+calSummerFinalExam                     ="Beginning of summer final exams";
+
+
+
+///////////////////////////////////books////////////////////////////////////////////
+bookScreenTitle                          ="Library";
+bookBorrowedDateTitle                    ="Borrowing Date";
+bookBorrowedNoDataMSG                    ="You don't have any borrowing books";
+//////////////////////////////////General////////////////////////////////////////
+ApplicationTitleText                     ="King Saud University";
+OKayButtonText                           ="OK";
+CancelButtonText                         ="Cancel";
+DoneButtonText                           ="Done";
+AllFieldsAreRequiredMessage              ="All Fields are required";
+WrongMailFormatMessage                   ="Invalid email address format";
+SaveButtonText                           ="Save";
+DeleteButtonText                         ="Delete";
+ErrorGeneralTitle                        ="Error";
+
+NetWorkBody                              ="No Internet connection. Make sure WiFi or cellular data is turned on";
+NetWorkConnection                             ="";
+NoCameraMessage                          ="Device has no camera";
+NoDataFoundMsg                           ="No data found";
+ServerErrorMsg                           ="Server Error";
+UserFieldsText                           ="Name / UserName / Job Code";
+UserNameText                             ="Name";
+UserUsernameText                         ="UserName";
+UserJobCodeText                          ="Job Code";
+UserJobTitleText                         ="Job Name";
+/////////////////////////////update language//////////////////////////////////////////
+UpdateLanguageConfirmationMsg            ="Language has been updated";
+LanguageUpdateError                      ="Language hasn't been updated on server, Please try again later";
+/////////////////////////////Send Mail//////////////////////////////////////////
+NameMandatoryMsg                         ="Enter Name";
+mobileNumMandatoryMsg                    ="Enter Mobile Number";
+mobileNotValidMsg                        ="Enter Valid Mobile Number";
+emailMandatoryMsg                        ="Enter Email address";
+emailNotValidMsg                         ="Enter Valid Email";
+messageMandatoryMsg                      ="Enter Message Text";
+EmailNameText                            ="Name";
+MobileNumText                            ="Mobile";
+EmailText                                ="Email";
+MessageText                              ="Message \\ Note";
+MailTitleText                            ="Comments";
+salaryClaim                            ="If you have any note about your payments, you can write a message to Payroll department. And you will get an automatic response.";

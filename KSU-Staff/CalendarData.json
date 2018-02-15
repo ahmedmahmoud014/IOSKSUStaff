@@ -1,0 +1,139 @@
+{
+    "calendar": [
+                 {
+                 "v_type": "calStartFirstNew",
+                 "hijriDate": "22-12-1438",
+                 "greogDate": "13-09-2017"
+                 },
+                 {
+                 "v_type": "calStartFirst",
+                 "hijriDate": "26-12-1438",
+                 "greogDate": "17-09-2017"
+                 },
+                 {
+                 "v_type": "calNationalDay",
+                 "hijriDate": "04-01-1439",
+                 "greogDate": "24-09-2017"
+                 },
+                 {
+                 "v_type": "calFirstTermStartTrans",
+                 "hijriDate": "25-01-1439",
+                 "greogDate": "15-10-2017"
+                 },
+                 {
+                 "v_type": "calFirstTermEndTrans",
+                 "hijriDate": "20-02-1439",
+                 "greogDate": "09-11-2017"
+                 },
+                 {
+                 "v_type": "calLastAppology",
+                 "hijriDate": "12-03-1439",
+                 "greogDate": "30-11-2017"
+                 },
+                 {
+                 "v_type": "calFirstTermStartGeneralExam",
+                 "hijriDate": "06-04-1439",
+                 "greogDate": "24-12-2017"
+                 },
+                 {
+                 "v_type": "calFirstExam",
+                 "hijriDate": "13-04-1439",
+                 "greogDate": "31-12-2017"
+                 },
+                 {
+                 "v_type": "calStartMidVaca",
+                 "hijriDate": "24-04-1439",
+                 "greogDate": "11-01-2018"
+                 },
+                 {
+                 "v_type": "calStartSecondNew",
+                 "hijriDate": "30-04-1439",
+                 "greogDate": "17-01-2018"
+                 },
+                 {
+                 "v_type": "calStartSecond",
+                 "hijriDate": "04-05-1439",
+                 "greogDate": "21-01-2018"
+                 },
+                 {
+                 "v_type": "calSecondTermStartTrans",
+                 "hijriDate": "02-06-1439",
+                 "greogDate": "18-02-2018"
+                 },
+                 {
+                 "v_type": "calLastAppologyYearly",
+                 "hijriDate": "20-06-1439",
+                 "greogDate": "08-03-2018"
+                 },
+                 {
+                 "v_type": "calSecondTermEndTrans",
+                 "hijriDate": "27-06-1439",
+                 "greogDate": "15-03-2018"
+                 },
+                 {
+                 "v_type": "calLastAppology",
+                 "hijriDate": "19-07-1439",
+                 "greogDate": "05-04-2018"
+                 },
+                 {
+                 "v_type": "calSecondTermStartGeneralExam",
+                 "hijriDate": "13-08-1439",
+                 "greogDate": "29-04-2018"
+                 },
+                 {
+                 "v_type": "calSecondTermStartFinalExam",
+                 "hijriDate": "20-08-1439",
+                 "greogDate": "06-05-2018"
+                 },
+                 {
+                 "v_type": "calStartUniversityTrans",
+                 "hijriDate": "27-08-1439",
+                 "greogDate": "13-05-2018"
+                 },
+                 {
+                 "v_type": "calSecondTermEndFinalExam",
+                 "hijriDate": "29-08-1439",
+                 "greogDate": "15-05-2018"
+                 },
+                 {
+                 "v_type": "calStartTeachersVaca",
+                 "hijriDate": "16-09-1439",
+                 "greogDate": "31-05-2018"
+                 },
+                 {
+                 "v_type": "calEndUniversityTrans",
+                 "hijriDate": "28-10-1439",
+                 "greogDate": "12-07-2018"
+                 },
+                 {
+                 "v_type": "calEndTeachersVaca",
+                 "hijriDate": "16- 12-1439",
+                 "greogDate": "27-08-2018"
+                 },
+                 {
+                 "v_type": "calNewAcademicYear",
+                 "hijriDate": "22-12-1439",
+                 "greogDate": "02-09-2018"
+                 },
+                 {
+                 "v_type": "calStartSummarCourse",
+                 "hijriDate": "12-09-1439",
+                 "greogDate": "27-05-2018"
+                 },
+                 {
+                 "v_type": "calSummerStart",
+                 "hijriDate": "10-10-1439",
+                 "greogDate": "24-06-2018"
+                 },
+                 {
+                 "v_type": "calSummerLastApology",
+                 "hijriDate": "13-11-1439",
+                 "greogDate": "26-07-2018"
+                 },
+                 {
+                 "v_type": "calSummerFinalExam",
+                 "hijriDate": "01-12-1439",
+                 "greogDate": "12-08-2018"
+                 }
+                 ]
+}

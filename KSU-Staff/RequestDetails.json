@@ -1,0 +1,767 @@
+{
+    "GetRequestDetailsResult": {
+        "response": {
+            "pages": [
+                      {
+                      "sections": [
+                                   {
+                                   "rows": [
+                                            {
+                                            "dataType": "text",
+                                            "label": "Employee No.",
+                                            "listValue": null,
+                                            "singleValue": "2720"
+                                            },
+                                            {
+                                            "dataType": "text",
+                                            "label": "Full Name",
+                                            "listValue": null,
+                                            "singleValue": "عبداللطيف احمد على الضويلع ال غيهب"
+                                            },
+                                            {
+                                            "dataType": "text",
+                                            "label": "Date of Birth",
+                                            "listValue": null,
+                                            "singleValue": "20 January, 1958"
+                                            },
+                                            {
+                                            "dataType": "text",
+                                            "label": "Gender",
+                                            "listValue": null,
+                                            "singleValue": "Male"
+                                            },
+                                            {
+                                            "dataType": "text",
+                                            "label": "Mobile No.",
+                                            "listValue": null,
+                                            "singleValue": "966555459243"
+                                            },
+                                            {
+                                            "dataType": "text",
+                                            "label": "Scientific Rank",
+                                            "listValue": null,
+                                            "singleValue": "Professor"
+                                            },
+                                            {
+                                            "dataType": "text",
+                                            "label": "Date scientific rank was awarded (Hijri)",
+                                            "listValue": null,
+                                            "singleValue": "1438"
+                                            },
+                                            {
+                                            "dataType": "text",
+                                            "label": "College Title - English",
+                                            "listValue": null,
+                                            "singleValue": "College of Pharmacy"
+                                            },
+                                            {
+                                            "dataType": "text",
+                                            "label": "Department Title - English",
+                                            "listValue": null,
+                                            "singleValue": "Clinical Pharmacy"
+                                            },
+                                            {
+                                            "dataType": "text",
+                                            "label": "Specialization (General)",
+                                            "listValue": null,
+                                            "singleValue": "التخصص الرئيسي"
+                                            },
+                                            {
+                                            "dataType": "text",
+                                            "label": "Specialization (Specific)",
+                                            "listValue": null,
+                                            "singleValue": "صيدلهاكلينيكيه)ادويهالتخدير("
+                                            },
+                                            {
+                                            "dataType": "text",
+                                            "label": "PhD awarded by (University Name)",
+                                            "listValue": null,
+                                            "singleValue": null
+                                            },
+                                            {
+                                            "dataType": "text",
+                                            "label": "Country of University",
+                                            "listValue": null,
+                                            "singleValue": ""
+                                            },
+                                            {
+                                            "dataType": "text",
+                                            "label": "City",
+                                            "listValue": null,
+                                            "singleValue": null
+                                            },
+                                            {
+                                            "dataType": "text",
+                                            "label": "Date the degree was awarded (Gregorian)",
+                                            "listValue": null,
+                                            "singleValue": "2015"
+                                            },
+                                            {
+                                            "dataType": "text",
+                                            "label": "Date the degree was awarded (Hijri)",
+                                            "listValue": null,
+                                            "singleValue": "1438"
+                                            },
+                                            {
+                                            "dataType": "text",
+                                            "label": "Joining Date (KSU or any other University) as a Faculty Member (Hijri)",
+                                            "listValue": null,
+                                            "singleValue": "1400"
+                                            },
+                                            {
+                                            "dataType": "text",
+                                            "label": "National ID No.",
+                                            "listValue": null,
+                                            "singleValue": "1014570327"
+                                            }
+                                            ],
+                                   "title": "Personal Information"
+                                   }
+                                   ]
+                      },
+                      {
+                      "sections": [
+                                   {
+                                   "rows": [
+                                            {
+                                            "dataType": "text",
+                                            "label": "Have you ever been recruited after retirement?",
+                                            "listValue": null,
+                                            "singleValue": "No"
+                                            },
+                                            {
+                                            "dataType": "text",
+                                            "label": "Retirement Date",
+                                            "listValue": null,
+                                            "singleValue": "02 November, 2016"
+                                            },
+                                            {
+                                            "dataType": "text",
+                                            "label": "Requested Period",
+                                            "listValue": null,
+                                            "singleValue": "One Academic Year"
+                                            },
+                                            {
+                                            "dataType": "text",
+                                            "label": "Start Date",
+                                            "listValue": null,
+                                            "singleValue": "15 November, 2016"
+                                            }
+                                            ],
+                                   "title": "Recruitment Details"
+                                   },
+                                   {
+                                   "rows": [
+                                            {
+                                            "dataType": "text",
+                                            "label": "Do you hold an administrative position?",
+                                            "listValue": null,
+                                            "singleValue": "Yes"
+                                            },
+                                            {
+                                            "dataType": "text",
+                                            "label": "Administrative Position Title",
+                                            "listValue": null,
+                                            "singleValue": "admin"
+                                            }
+                                            ],
+                                   "title": "Administrative Position Information"
+                                   }
+                                   ]
+                      },
+                      {
+                      "sections": [
+                                   {
+                                   "rows": [
+                                            {
+                                            "dataType": "list",
+                                            "label": "List",
+                                            "listValue": [
+                                                          [
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Position",
+                                                           "listValue": null,
+                                                           "singleValue": "position"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "From/Year",
+                                                           "listValue": null,
+                                                           "singleValue": "1438"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "To/Year",
+                                                           "listValue": null,
+                                                           "singleValue": "1438"
+                                                           }
+                                                           ]
+                                                          ],
+                                            "singleValue": null
+                                            }
+                                            ],
+                                   "title": "Academic and administrative positions that I have held in the University"
+                                   }
+                                   ]
+                      },
+                      {
+                      "sections": [
+                                   {
+                                   "rows": [
+                                            {
+                                            "dataType": "list",
+                                            "label": "List",
+                                            "listValue": [
+                                                          [
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Name",
+                                                           "listValue": null,
+                                                           "singleValue": "name"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Organization",
+                                                           "listValue": null,
+                                                           "singleValue": "org"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "From/Year",
+                                                           "listValue": null,
+                                                           "singleValue": "1438"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "To/Year",
+                                                           "listValue": null,
+                                                           "singleValue": "1438"
+                                                           }
+                                                           ]
+                                                          ],
+                                            "singleValue": null
+                                            }
+                                            ],
+                                   "title": "Participation in KSU committees in the last 3 years"
+                                   }
+                                   ]
+                      },
+                      {
+                      "sections": [
+                                   {
+                                   "rows": [
+                                            {
+                                            "dataType": "list",
+                                            "label": "List",
+                                            "listValue": [
+                                                          [
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Book Title",
+                                                           "listValue": null,
+                                                           "singleValue": "title"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Book Type",
+                                                           "listValue": null,
+                                                           "singleValue": "Reference Book"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "ISBN ",
+                                                           "listValue": null,
+                                                           "singleValue": "23164578945"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Publication Date (Gregorian)",
+                                                           "listValue": null,
+                                                           "singleValue": "2016/1"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "I certify that the book has been reviewed.",
+                                                           "listValue": null,
+                                                           "singleValue": "Yes"
+                                                           }
+                                                           ]
+                                                          ],
+                                            "singleValue": null
+                                            }
+                                            ],
+                                   "title": "Books in the last 3 years"
+                                   }
+                                   ]
+                      },
+                      {
+                      "sections": [
+                                   {
+                                   "rows": [
+                                            {
+                                            "dataType": "list",
+                                            "label": "List",
+                                            "listValue": [
+                                                          [
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Journal Title",
+                                                           "listValue": null,
+                                                           "singleValue": "m"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Research Title",
+                                                           "listValue": null,
+                                                           "singleValue": "n"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Research Type",
+                                                           "listValue": null,
+                                                           "singleValue": "Original"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Publication Date (Gregorian)",
+                                                           "listValue": null,
+                                                           "singleValue": "2016/1"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "ISI?",
+                                                           "listValue": null,
+                                                           "singleValue": "Yes"
+                                                           }
+                                                           ]
+                                                          ],
+                                            "singleValue": null
+                                            }
+                                            ],
+                                   "title": "Journals in the last 3 years"
+                                   }
+                                   ]
+                      },
+                      {
+                      "sections": [
+                                   {
+                                   "rows": [
+                                            {
+                                            "dataType": "list",
+                                            "label": "List",
+                                            "listValue": [
+                                                          [
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Research Title",
+                                                           "listValue": null,
+                                                           "singleValue": "t"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Conference Title",
+                                                           "listValue": null,
+                                                           "singleValue": "n"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Location",
+                                                           "listValue": null,
+                                                           "singleValue": "p"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Conference Date",
+                                                           "listValue": null,
+                                                           "singleValue": "09 November, 2016"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Research Type",
+                                                           "listValue": null,
+                                                           "singleValue": "Original"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Number of Researchers",
+                                                           "listValue": null,
+                                                           "singleValue": "12"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Your order among the researchers",
+                                                           "listValue": null,
+                                                           "singleValue": "2"
+                                                           }
+                                                           ]
+                                                          ],
+                                            "singleValue": null
+                                            }
+                                            ],
+                                   "title": "Conferences in the last 3 years"
+                                   }
+                                   ]
+                      },
+                      {
+                      "sections": [
+                                   {
+                                   "rows": [
+                                            {
+                                            "dataType": "list",
+                                            "label": "List",
+                                            "listValue": [
+                                                          [
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Project Title",
+                                                           "listValue": null,
+                                                           "singleValue": "name name name name name name name nam name name name name name name nam name name name name name name name namen name name name name name anemme name"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Start Date",
+                                                           "listValue": null,
+                                                           "singleValue": "1438"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "End Date  ",
+                                                           "listValue": null,
+                                                           "singleValue": "1438"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Supporting Organizations",
+                                                           "listValue": null,
+                                                           "singleValue": "org"
+                                                           }
+                                                           ]
+                                                          ],
+                                            "singleValue": null
+                                            }
+                                            ],
+                                   "title": "Current Funded Research Projects"
+                                   }
+                                   ]
+                      },
+                      {
+                      "sections": [
+                                   {
+                                   "rows": [
+                                            {
+                                            "dataType": "list",
+                                            "label": "List",
+                                            "listValue": [
+                                                          [
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Title of Training Course",
+                                                           "listValue": null,
+                                                           "singleValue": "123"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Date",
+                                                           "listValue": null,
+                                                           "singleValue": "09 November, 2016"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Duration (Days)",
+                                                           "listValue": null,
+                                                           "singleValue": "11"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Location",
+                                                           "listValue": null,
+                                                           "singleValue": "2.3"
+                                                           }
+                                                           ]
+                                                          ],
+                                            "singleValue": null
+                                            }
+                                            ],
+                                   "title": "Development courses you have attended in your area of specialization or teaching during the last 2 years"
+                                   }
+                                   ]
+                      },
+                      {
+                      "sections": [
+                                   {
+                                   "rows": [
+                                            {
+                                            "dataType": "list",
+                                            "label": "List",
+                                            "listValue": [
+                                                          [
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Type of Activity",
+                                                           "listValue": null,
+                                                           "singleValue": "Conference"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Title/Name",
+                                                           "listValue": null,
+                                                           "singleValue": "title"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Date (Hijri)",
+                                                           "listValue": null,
+                                                           "singleValue": "09 November, 2016"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Location",
+                                                           "listValue": null,
+                                                           "singleValue": " place"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Country",
+                                                           "listValue": null,
+                                                           "singleValue": "Australia"
+                                                           }
+                                                           ]
+                                                          ],
+                                            "singleValue": null
+                                            }
+                                            ],
+                                   "title": "Conferences, Seminars, and Workshops within the area of specialization during the last 2 years"
+                                   }
+                                   ]
+                      },
+                      {
+                      "sections": [
+                                   {
+                                   "rows": [
+                                            {
+                                            "dataType": "textarea",
+                                            "label": "Most Prominent Contributions in Society",
+                                            "listValue": null,
+                                            "singleValue": "test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset s"
+                                            },
+                                            {
+                                            "dataType": "textarea",
+                                            "label": "Other information: creative works, patent, scientific prizes ... etc.",
+                                            "listValue": null,
+                                            "singleValue": "test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset stet stets tets stet test test tset s"
+                                            }
+                                            ],
+                                   "title": "Contributions in Society"
+                                   }
+                                   ]
+                      },
+                      {
+                      "sections": [
+                                   {
+                                   "rows": [
+                                            {
+                                            "dataType": "labelText",
+                                            "label": null,
+                                            "listValue": null,
+                                            "singleValue": "I have a supervision load."
+                                            },
+                                            {
+                                            "dataType": "labelText",
+                                            "label": null,
+                                            "listValue": null,
+                                            "singleValue": "Eman TESTING #1"
+                                            },
+                                            {
+                                            "dataType": "labelText",
+                                            "label": null,
+                                            "listValue": null,
+                                            "singleValue": "Eman TESTING #2"
+                                            },
+                                            {
+                                            "dataType": "list",
+                                            "label": "List",
+                                            "listValue": [
+                                                          [
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Type of Supervision",
+                                                           "listValue": null,
+                                                           "singleValue": "Masters"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Student Name",
+                                                           "listValue": null,
+                                                           "singleValue": "name"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Research Title",
+                                                           "listValue": null,
+                                                           "singleValue": "title"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Project/Thesis Start Date",
+                                                           "listValue": null,
+                                                           "singleValue": "First Semester - 1438/1437"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Expected Date of Project Completion",
+                                                           "listValue": null,
+                                                           "singleValue": "First Semester - 1438/1437"
+                                                           }
+                                                           ]
+                                                          ],
+                                            "singleValue": null
+                                            }
+                                            ],
+                                   "title": "Supervisory Load (Graduate Studies)"
+                                   }
+                                   ]
+                      },
+                      {
+                      "sections": [
+                                   {
+                                   "rows": [
+                                            {
+                                            "dataType": "list",
+                                            "label": "List",
+                                            "listValue": [
+                                                          [
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Do you have a teaching load?",
+                                                           "listValue": null,
+                                                           "singleValue": "Yes"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Semester",
+                                                           "listValue": null,
+                                                           "singleValue": "First Semester"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Academic Year",
+                                                           "listValue": null,
+                                                           "singleValue": "1438/1437"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Level",
+                                                           "listValue": null,
+                                                           "singleValue": "Undergraduate"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Course Code - English",
+                                                           "listValue": null,
+                                                           "singleValue": "ic 101"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Course Title - English",
+                                                           "listValue": null,
+                                                           "singleValue": "Principles of Islamic Culture"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Credits",
+                                                           "listValue": null,
+                                                           "singleValue": "2"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Reasons",
+                                                           "listValue": null,
+                                                           "singleValue": "jhhjhj"
+                                                           }
+                                                           ],
+                                                          [
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Do you have a teaching load?",
+                                                           "listValue": null,
+                                                           "singleValue": "Yes"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Semester",
+                                                           "listValue": null,
+                                                           "singleValue": "First Semester"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Academic Year",
+                                                           "listValue": null,
+                                                           "singleValue": "1438/1437"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Level",
+                                                           "listValue": null,
+                                                           "singleValue": "Undergraduate"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Course Code - English",
+                                                           "listValue": null,
+                                                           "singleValue": "ic 101"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Course Title - English",
+                                                           "listValue": null,
+                                                           "singleValue": "Principles of Islamic Culture"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Credits",
+                                                           "listValue": null,
+                                                           "singleValue": "2"
+                                                           },
+                                                           {
+                                                           "dataType": "text",
+                                                           "label": "Reasons",
+                                                           "listValue": null,
+                                                           "singleValue": "jhhjhj"
+                                                           }
+                                                           ]
+                                                          ],
+                                            "singleValue": null
+                                            },
+                                            {
+                                            "dataType": "text",
+                                            "label": "Total Number of Hours",
+                                            "listValue": null,
+                                            "singleValue": "2"
+                                            },
+                                            {
+                                            "dataType": "text",
+                                            "label": "Average Teaching Load for Applicant",
+                                            "listValue": null,
+                                            "singleValue": "2"
+                                            }
+                                            ],
+                                   "title": "Teaching Load  "
+                                   }
+                                   ]
+                      }
+                      ],
+            "requesterInfo": {
+                "email": "testemployee14",
+                "jobCode": "26332",
+                "name": "بكر سليمان مرجي الحربي",
+                "phone": "0504602711"
+            }
+        },
+        "status": {
+            "error_message": null,
+            "success": true,
+            "readableForUser": false
+        }
+    }
+}

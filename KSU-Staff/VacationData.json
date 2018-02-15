@@ -1,0 +1,49 @@
+{
+    "calendar": [
+                 {
+                 "v_type": "calStartTeachersVaca",
+                 "hijriDate": "16-09-1439",
+                 "greogDate": "31-05-2018"
+                 },
+                 {
+                 "v_type": "calEndTeachersVaca",
+                 "hijriDate": "16- 12-1439",
+                 "greogDate": "27-08-2018"
+                 },
+                 {
+                 "v_type": "calStartMidVaca",
+                 "hijriDate": "24-04-1439",
+                 "greogDate": "11-01-2018"
+                 },
+                 {
+                 "v_type": "calStartSecondNew",
+                 "hijriDate": "30-04-1439",
+                 "greogDate": "17-01-2018"
+                 },
+                 {
+                 "v_type": "calNationalDay",
+                 "hijriDate": "04-01-1439",
+                 "greogDate": "24-09-2017"
+                 },
+                 {
+                 "v_type": "calSecondTermStartFinalExam",
+                 "hijriDate": "20-08-1439",
+                 "greogDate": "06-05-2018"
+                 },
+                 {
+                 "v_type": "calSecondTermEndFinalExam",
+                 "hijriDate": "29-08-1439",
+                 "greogDate": "15-05-2018"
+                 },
+                 {
+                 "v_type": "calNewAcademicYear",
+                 "hijriDate": "22-12-1439",
+                 "greogDate": "02-09-2018"
+                 },
+                 {
+                 "v_type": "calSummerFinalExam",
+                 "hijriDate": "01-12-1439",
+                 "greogDate": "12-08-2018"
+                 }
+                 ]
+}

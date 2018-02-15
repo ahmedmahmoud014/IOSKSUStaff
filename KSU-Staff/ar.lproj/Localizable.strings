@@ -1,0 +1,387 @@
+/* 
+  Localizable.strings
+  KSU-Staff
+
+  Created by EJ-Mac book on 9/22/14.
+  Copyright (c) 2014 E-Jawdah. All rights reserved.
+*/
+///////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////login////////////////////////////////////////////////
+usernameLblText                          ="اسم المستخدم";
+passwordLblText                          ="كلمة المرور";
+forgetPWLblText                          ="نسيت كلمة المرور";
+DocInfoLblText                           ="الإستعلام عن المعاملات الإلكترونية";
+loginLblText                             ="تسجيل الدخول";
+FingerPrintLblText                       ="تفعيل البصمة";
+FingerPrintErrorText                     ="من فضلك ادخل اسم المستخدم و كلمة المرور.";
+userNameMandatoryMsg                     ="ادخل اسم المستخدم / كلمة المرور  صحيحة";
+passwordMandatoryMsg                     ="ادخل اسم المستخدم / كلمة المرور  صحيحة";
+////////////////////////////////////////Doc Inquiry///////////////////////////////////////////////
+ByIDLblText                              ="الإستعلام برقم المعاملة الواردة للجامعة";
+byLogBookLblText                         ="الاستعلام برقم القيد في الجامعة";
+docIDText                                ="رقم الوارد";
+docIDErrorText                           ="من فضلك ادخل رقم الوارد";
+docOrganizationText                      ="الجهه الوارد منها المعاملة";
+externalDocOrganizationSearchText        ="اسم الجهة";
+externalDocOrganizationSearchErrorText   ="من فضلك اختر اسم الجهة";
+docOrganizationErrorText                 ="من فضلك ادخل الجهة الوارد منها المعاملة";
+noDocOrganizationText                    ="لا يوجد جهة بهذا الرقم";
+logBookText                              ="رقم القيد";
+logBookErrorText                         ="من فضلك ادخل رقم القيد";
+SearchButtonText                         ="بحث";
+BackButtonText                           ="عودة";
+ChooseButtonText                         ="آختر";
+logBookIDHeaderText                      ="رقم القيد";
+logBookDateHeaderText                    ="تاريخ القيد";
+logBookStatusHeaderText                  ="حاله القيد";
+////////////////////////////////////////dashboard////////////////////////////////////////////////
+profileDBText                            ="الملف الشخصي";
+salaryDBText                             ="الراتب";
+paymentDBText                            ="المسيرات الإفرادية";
+permissionsDBText                        ="الصلاحيات";
+requestsDBText                           ="الطلبات";
+delegationsDBText                        ="التفاويض";
+vacationsDBText                          ="الاجازات";
+schduleDBText                            ="الجدول الدراسي";
+TasksDBText                              ="المهام";
+passpordDBText                           ="جواز السفر";
+ticketsDBText                            ="أستحقاق تذاكر الطيران";
+notificationDBText                       ="الاشعارات";
+calenderDBText                           ="التقويم الجامعي";
+finInfoDBText                            ="المعلومات المالية";
+custodyDBText                            ="سجل العهدة";
+VehiclesDBText                           ="المركبات المسندة";
+
+copyRightsText                           ="جامعة الملك سعود";
+
+NormalText                               ="اعتيادية";
+EmergencyText                            ="اضطرارية";
+nafeeDBText                                ="نافع";
+
+////////////////////////////////////////Profile////////////////////////////////////////////////
+profileTitleText                         ="الملف الشخصي";
+PresonalInfoText                         ="المعلومات الشخصية";
+JobInfoText                              ="المعلومات الوظيفية";
+
+FullNameText                             ="الأسم الكامل";
+NationalityText                          ="الجنسية";
+BirthDateText                            ="تاريخ الميلاد";
+BirthDateHijryText                       ="تاريخ الميلاد الهجري";
+SocialNoText                             ="رقم الهوية";
+SocialExpireText                         ="تاريخ انتهاء الهوية";
+TelNoText                                ="رقم الهاتف";
+MobNoText                                ="رقم الجوال";
+AlterEmailText                           ="البريد الألكتروني البديل";
+webSiteText                              ="الموقع الشخصي";
+
+EmpNoText                                ="الرقم الوظيفي";
+RankText                                 ="الرتبة";
+GradeText                                ="الدرجة";
+HiringDateText                           ="تاريخ التعيين";
+HiringDateHijryText                      ="تاريخ التعيين الهجري";
+JobTitleText                             ="المسمي الوظيفي";
+DepartmentText                           ="القسم";
+SectionText                              ="الإدارة";
+StatusText                               ="الحالة";
+StartWorkText                            ="تاريخ الالتحاق";
+StartWorkHijryText                       ="بداية العمل الهجري";
+BankAccNoText                            ="رقم حساب البنك";
+BankNameText                             ="اسم البنك";
+//////////////////////////////////Salary////////////////////////////////////////
+SalaryTitleText                          ="الراتب";
+SalaryPaymentInfoText                    ="جهة الصرف";
+SalaryAllowanceText                      ="المستحقات";
+SalaryDeductionText                      ="الحسومات";
+SalaryTotalsText                         ="الإجمالي";
+
+DateText                                 =" التاريخ";
+TypeText                                 =" النوع";
+BankText                                 =" البنك";
+
+CodeText                                 ="الرمز";
+DescriptionText                          ="الوصف";
+ValueText                                ="القيمة";
+
+TotalNetText                             ="الصافي";
+TotalDiscountText                        ="مجموع الحسومات";
+TotalDeserveText                         ="مجموع المستحقات";
+////////////////////////////////////////Payment////////////////////////////////////////////////
+PaymentPaidText                          ="تم الصرف";
+PaymentNotPaidText                       ="لم يتم الصرف";
+
+PaymentItemNumberText                    =" الرقم";
+PaymentItemDescripText                   =" الوصف";
+PaymentItemAmountText                    =" المبلغ";
+PaymentItemDateText                      =" التاريخ";
+PaymentItemIndicatorText                 =" ملاحظات";
+////////////////////////////////Delegation////////////////////////////////////////////
+DelegationTitleText                      ="التفاويض";
+AddDelegationTitleText                   ="اضافة تفويض";
+EditDelegationTitleText                  ="تعديل تفويض";
+EditDelegationButtonText                  =" تعديل ";
+
+DelegationNoDataFoundMsg                 ="لا توجد تفاويض";
+delegationStartTimeText                  ="من:";
+delegationEndTimeText                    ="إلى:";
+delegationServiceNameText                ="اسم الخدمة:";
+delegationRequestIDText                  ="رقم الطلب:";
+delegationActivateStatusText             ="مفعل";
+delegationDeactivateStatusText           ="غير مفعل";
+EmptyButtonText                          ="تفريغ";
+AddButtonText                            ="أضافة";
+EditButtonText                           ="تعديل";
+DeleteButtonText                           ="حذف";
+validateDateError                        ="تاريخ النهايه يجب ان يكون اكبر من أو يساوي تاريخ البدايه";
+NoDelegationsError                       ="لا توجد تفاويض بهذة البيانات";
+delegationUserNameMandatoryMsg           ="من فضلك ادخل اسم المستخدم.";
+loadUserDataErrorMsg                     ="من فضلك قم بتحميل بيانات هذا المستخدم من الخادم";
+delegationUserNameMinCharsMsg            ="من فضلك ادخل على الاقل ٣ حروف.";
+delegationServiceNameMandatoryMsg        ="من فضلك اختر اسم الخدمه.";
+delegationRequestIDMandatoryMsg          ="من فضلك ادخل رقم الطلب.";
+delegationStartDateMandatoryMsg          ="من فضلك ادخل تاريخ بداية التفويض.";
+delegationEndDateMandatoryMsg            ="من فضلك ادخل تاريخ نهاية التفويض.";
+deleteDelegationMsgText                  ="هل تريد مسح هذا التفويض";
+ServicesTitleText                        ="الخدمات";
+ServicesNotFountMsg                      ="لا توجد خدمة بهذا الأسم";
+UsersTitleText                           ="المستخدمين";
+UsersNotFountMsg                         ="لا يوجد مستخدمين بهذا الأسم / اسم المستخدم / الرقم الوظيفي";
+UserSearchErrorText                      ="من فضلك اختر اسم المستخدم";
+AddDelegationConfirmationMsg             ="تم اضافة التفويض";
+EditDelegationConfirmationMsg            ="تم تعديل التفويض";
+DeleteDelegationConfirmationMsg          ="تم مسح التفويض";
+
+////////////////////////////////Permissions////////////////////////////////////////////
+PermissionsTitleText                     ="الصلاحيات";
+PermissionsNoDataFoundMsg                ="لا توجد صلاحيات";
+////////////////////////////////Schedule////////////////////////////////////////////
+scheduleTitleText                        ="الجدول الدراسي";
+scheduleSaturdayText                     ="السبت";
+scheduleSundayText                       ="الأحد";
+scheduleMondayText                       ="الأثنين";
+scheduleTuesdayText                      ="الثلاثاء";
+scheduleWednesdayText                    ="الإربعاء";
+scheduleThursdayText                     ="الخميس";
+scheduleCourseCodeText                   ="رمز المقرر:";
+scheduleClassBuildingText                ="المبنى:";
+scheduleClassPartitionText               ="الجناح:";
+scheduleClassFloorText                   ="الدور:";
+scheduleClassRoomText                    ="القاعة:";
+scheduleStartTimeText                    ="من:";
+scheduleEndTimeText                      ="إلى:";
+scheduleSectionIDText                    ="رقم الشعبة:";
+scheduleNoDataFoundMsg                   ="لا يوجد جدول دراسي";
+/////////////////////////////////////Vacations////////////////////////////////////////////////
+VacationTitleText                        ="الاجازات";
+VacationNormalText                       ="اجازة اعتيادية";
+VacationEmergencyText                    ="اجازة اضطرارية";
+/////////////////////////////////////Requests////////////////////////////////////////////////
+RequestTitleText                         ="الطلبات";
+RequestNoDataFoundMsg                    ="لا توجد طلبات";
+RequestActionsNoDataFoundMsg             ="لا توجد إجراءات";
+RequestDetailsNoDataFoundMsg             ="لا توجد تفاصيل";
+RequestServiceNameText                   ="الخدمة";
+RequestSenderNameText                    ="المُرسل";
+RequestStartTimeText                     ="من";
+RequestEndTimeText                       ="الى";
+RequestIDText                            ="رقم الطلب";
+MyRequestsButtonText                     ="طلباتي";
+ProcessedRequestsButtonText              ="الطلبات المعالجة";
+RecievedRequestsButtonText               ="الطلبات الوارده";
+CompletedRequestsButtonText              ="الطلبات المكتملة";
+RequestDateText                          ="تاريخ الطلب:";
+RequestActionsTitleText                  ="خط سير إجراءات الطلب";
+RequestDetailsTitleText                  ="تفاصيل الطلب";
+RequestActionText                        ="الأجراء:";
+RequestActionReasonText                  ="السبب:";
+RequestActionDateText                    ="التاريخ:";
+RequestRequestIDText                     ="رقم الطلب:";
+RequestTypeText                          ="مقدم الطلب";
+RequestNumberText                        ="عنصر";
+RequestStatusText                        ="التفاصيل";
+/////////////////////////////////////Menu items////////////////////////////////////////////////
+MenuItemHomeText                         ="الرئيسية";
+MenuItemEditProfileText                  ="تعديل الملف الشخصي";
+MenuItemChangePWText                     ="تعديل كلمة المرور";
+MenuItemDocInquiryText                   ="الإستعلام عن المعاملات الإلكترونية";
+MenuItemContactsText                     ="أرقام تهمك";
+MenuItemNotifText                        ="الاشعارات";
+MenuItemLanguageText                     ="اللغة العربية";
+MenuItemSupportText                      ="الدعم الفني";
+MenuItemReportProbText                   ="الملاحظات";
+MenuItemAboutText                        ="عن التطبيق";
+MenuItemLogoutText                       ="تسجيل خروج";
+MenuItemSettingText                      ="الاعدادات";
+MenuTitleText                            ="القائمة";
+/////////////////////////////////////Notification////////////////////////////////////////////////
+DeleteNotification                       ="تم مسح الاشعارات";
+/////////////////////////////////////Calender////////////////////////////////////////////////
+CalenderTitleText                        ="التقويم الجامعي";
+DateFromText                             ="هجري";
+DateToText                               ="ميلادي";
+/////////////////////////////////////Task////////////////////////////////////////////////
+TaskTitleText                            ="المهام";
+TaskNameText                             ="مهمة";
+TaskDeptText                             =" الأدارة";
+TaskDateText                             =" التاريخ";
+TaskStatusText                           =" الحالة";
+TaskRemarksText                          =" الملاحظات";
+/////////////////////////////////////Passport////////////////////////////////////////////////
+PassportTitleText                        ="جواز السفر";
+PassportNameText                         ="الأسم";
+PassportNoText                           ="رقم جواز السفر";
+PassportExDateText                       ="تاريخ الانتهاء";
+/////////////////////////////////////Ticket////////////////////////////////////////////////
+TicketTitleText                          ="أستحقاق تذاكر الطيران";
+TicketNameText                           ="الأسم";
+TicketTypeText                           ="نوع التذكرة";
+TicketContYearText                       ="سنة العقد";
+/////////////////////////////////Change password////////////////////////////////////////////////
+ChPwTitleText                            ="تعديل كلمة المرور";
+ChPwOldPwText                            ="كلمة المرور القديمة";
+ChPwNewPwText                            ="كلمة المرور الجديدة";
+ChPwConfirmPWText                        ="تأكيد كلمة المرور الجديدة";
+VerifyButtonText                         ="تحقق";
+passwordMandatoryChMsg                   ="ادخل كلمة المرور القديمة";
+newPWMandatoryMsg                        ="ادخل كلمة المرور الجديدة";
+confirmPWMandatoryMsg                    ="ادخل تأكيد كلمة المرور الجديدة";
+confirmPW_notMatchMsg                    ="تأكيد كلمة المرور الجديدة غير متطابقة";
+confirmOldPWMatchMsg                     ="كلمة المرور الجديدة يجب ان تختلف عن القديمة";
+ChangePWDoneMsgText                      ="تم تعديل كلمة المرور بنجاح";
+PWminLenghtMsgText                       ="الحد الادني لكلمة المرور 6 حروف";
+/////////////////////////////////It support////////////////////////////////////////////////
+ItSupportMsgText                         ="محتوي الرسالة";
+SendButtonText                           ="إرسال";
+ITSupportSuccMsgText                     ="تم ارسال رسالتك بنجاح";
+ItSupportSubjText                        ="عنوان الرسالة";
+ItSupportSubMandMSG                      ="ادخل عنوان الرسالة";
+ItSupportTextMandMSG                     ="ادخل محتوي الرسالة";
+/////////////////////////////////Report Problem////////////////////////////////////////////////
+OpenCameraText                           ="أخذ الصورة";
+OpenPhotoLibText                         ="اختيار الموجود";
+ImageNeededMsgText                       ="اختار صورة";
+/////////////////////////////forget password/////////////////////////////////////////////
+AlterEmailMandtoryMsg                    ="الرجاء إدخال البريد الاإلكتروني البديل";
+forgetPWDoneMsg                          ="تم ارسال كلمة المرور الخاصة بك علي هاتفك الجوال";
+userNameMandatoryFPMsg                   ="ادخل اسم المستخدم صحيح";
+forgetPWVerifyText                       ="كود التحقق";
+verificationSendingMsg                   ="تم إرسال كود التحقق علي جوالك";
+verifyCodeMandatoryFPMsg                 ="ادخل كود التحقق";
+/////////////////////////////////custody scrreen////////////////////////////////////////////////
+custodyDescText                          ="الوصف";
+custodyQuantityText                      ="الكمية:";
+custodyRemarksText                       ="الملاحظات";
+custodyDontExistMsg                      ="لا توجد عهد مسندة";
+///////////////////////////////////Language///////////////////////////////////////////
+currentLangText                          ="لغة التطبيق";
+changeLangMsgText                        ="هل تريد تغيير لغة التطبيق؟";
+changeLangDoneMsgText                    ="تم تغيير لغة التطبيق بنجاح";
+changeTotalsDBText                       ="إظهار القيم المتحركة";
+//////////////////////////////////send Claim///////////////////////////////////////////
+sendClaimTitleTxt                        ="ارسال شكوى";
+sendClaimLblTxt                          ="اكتب شكوى الراتب";
+sendClaimDoneMsgTxt                      ="تم ارسال شكوى الراتب الخاص بك بنجاح";
+sendClaimValidateMsgTxt                  ="ادخل شكوى الراتب";
+//////////////////////////////////Claim List///////////////////////////////////////////
+claimLstTitleTxt                         ="قائمة الشكاوى";
+claimLstDescpTxt                         ="الوصف";
+claimLstDateTxt                          ="التاريخ";
+claimLstTicketNoTxt                      ="رقم الشكوى";
+//////////////////////////////////////About///////////////////////////////////////
+aboutTxtMsg                              ="يقدم التطبيق عدة خدمات لإعضاء هيئة التدريس والموظفين  بالتكامل مع النظام الإداري والمالي لجامعة الملك سعود وهي\n\rإمكانية الاطلاع علي الملف الشخصي للمستخدم وعرض المعلومات الوظيفية له وكذلك سجل العهد كما يمكن للموظف الاطلاع على الرواتب حسب الشهور كما يمكنه ايضاً الاطلاع على رصيد الاجازات سواء كانت اعتيادية او اضطرارية. \n\r يتيح النظام الاطلاع على المسيرات الإفرادية حسب السنوات وقائمة أرقام تليفونات الهامة بجامعة الملك سعود كذلك يوفر التطبيق خدمة الدعم الفني وعرض التقويم الجامعى.                                                                                                                              وكذلك يقوم النظام بعرض المركبات المتاحة للموظف إن وجدت. \n\rالتطبيق متوافر باللغتين ( العربيه - الإنجليزية ) و يتيح للمستخدم ضبط الإعدادات الخاصة بحسابه.\n\r كما يوجد خدمة 'تعديل كلمة المرور' والتي تُمكن المستخدم من تعديل كلمة المرور الخاصة به وكذلك خدمة 'نسيت كلمة المرور' وهي تُمكن المستخدم من استرداد كلمة المرور الخاصه به ويتم ذلك عن طريق البريد الإلكتروني للمستخدم التابع لجامعة الملك سعود.
+";
+///////////////////////////////////vehicles//////////////////////////////////////////////
+vehicleNoText                            ="رقم اللوحة";
+vehicleTypeText                          ="نوع المركبة";
+vehicleAssignText                        ="تاريخ الاستلام";
+vehicleDeliveryText                      ="تاريخ الارجاع";
+
+//////////////////////////////////calendar JSON/////////////////////////////////
+calStartFirst                            ="بداية الدراسة للفصل الدراسي الأول";
+calNationalDay                           ="أجازة اليوم الوطني";
+calStartAdah                             ="بداية أجازة عيد الأضحى";
+calEndAdah                               ="بداية الدراسة بعد أجازة عيد الأضحى";
+calFirstExam                             ="بداية اختبار الفصل الدراسي الأول";
+calStartMidVaca                          ="بداية أجازة منتصف العام";
+calStartSecond                           ="بداية الدراسة للفصل الدراسي الثاني";
+calStartSecondMidVaca                    ="بداية أجازة منتصف الفصل الدراسي الثاني";
+calEndSecondMidVaca                      ="بداية الدراسة بعد أجازة منتصف الفصل الدراسي الثاني";
+calSecondExam                            ="بداية اختبارات الفصل الدراسي الثاني";
+calStartFinalVaca                        ="بداية أجازة نهاية العام";
+calStartYear                             ="بداية العام الدراسي";
+calStartFirstMidVaca                     ="بداية أجازة منتصف الفصل الدراسي الأول";
+calEndFirstMidVaca                       ="بداية الدراسة بعد أجازة منتصف الفصل الدراسي الأول";
+
+calLastAppology                          ="آخر موعد للاعتذار عن الفصل الدراسي وعن مقرر";
+calStartPrepareSubjects                  ="بداية اختبارات مواد الاعداد العام";
+calEndPrepareSubjects                    ="نهاية اختبارات مواد الاعداد العام";
+calStartTeachersVaca                     ="بداية أجازة أعضاء هيئة التدريس";
+calEndTeachersVaca                       ="عودة أعضاء هيئة التدريس";
+
+calStartSummarCourse                     ="بداية التهيئة والتسجيل للفصل الصيفي";
+calStartStudy                            ="بداية الدراسة";
+calStartFatrEidVaca                      ="بداية أجازة عيد الفطر المبارك";
+calEndFatrEidVaca                        ="بداية الدراسة بعد أجازة عيد الفطر المبارك";
+calStartExam                             ="بداية الاختبارات النهائية";
+calEndExam                               ="نهاية الاختبارات النهائية";
+
+calStartFirstNew                         ="بداية الدراسة والتهيئة للفصل الدراسي الأول";
+calStartSecondNew                        ="بداية الدراسة والتهيئة للفصل الثاني";
+calLastAppologyYearly                    ="آخر موعد للاعتذار عن الفصل الدراسي وعن مقرر(سنوي)";
+
+calFirstTermStartTrans                     ="بداية فترة التقديم للتحويل بين الكليات والأقسام";
+calFirstTermEndTrans                     ="نهاية فترة التقديم للتحويل بين الكليات والأقسام";
+calFirstTermStartGeneralExam                     ="بداية اختبارات مواد الإعداد العام ";
+calSecondTermStartTrans                     ="بداية فترة التقديم للتحويل بين الكليات والأقسام";
+calSecondTermEndTrans                     ="نهاية فترة التقديم للتحويل بين الكليات والأقسام";
+calSecondTermStartGeneralExam                     ="بداية اختبارات مواد الإعداد العام";
+calSecondTermStartFinalExam                     ="بداية الاختبارات النهائية";
+calSecondTermEndFinalExam                     ="نهاية الاختبارات النهائية";
+calStartUniversityTrans                     ="بداية فترة التقديم للتحويل من خارج الجامعة";
+calEndUniversityTrans                     ="نهاية فترة التقديم للتحويل من خارج الجامعة";
+calNewAcademicYear                     ="بداية العام الدراسي الجديد";
+calSummerStart                     ="بداية الدراسة للفصل الصيفي";
+calSummerLastApology                     =" آخر موعد للاعتذار عن الفصل الدراسي الصيفي وعن مقرر";
+calSummerFinalExam                     ="بداية الاختبارات النهائية";
+
+
+///////////////////////////////////books////////////////////////////////////////////
+bookScreenTitle                          ="المكتبة";
+bookBorrowedDateTitle                    ="تاريخ الإستعارة";
+bookBorrowedNoDataMSG                    ="لا توجد لديك كتب مستعارة";
+
+//////////////////////////////////General////////////////////////////////////////
+ApplicationTitleText                     ="جامعة الملك سعود";
+OKayButtonText                           ="موافق";
+CancelButtonText                         ="إلغاء";
+DoneButtonText                           ="موافق";
+AllFieldsAreRequiredMessage              ="كل الحقول مطلوبة";
+WrongMailFormatMessage                   ="صيغة البريد الاليكتروني غير صحيحة";
+SaveButtonText                           ="حفظ";
+DeleteButtonText                         ="مسح";
+ErrorGeneralTitle                        = "خطأ";
+NetWorkBody                       =" لا يوجد اتصال بالإنترنت، فضلا تأكد من تشغيل wifi أو الموبيل انترنت";
+NetWorkConnection                        ="";
+NoCameraMessage                          ="هذا الجهاز لا يحتوي علي كاميرا";
+NoDataFoundMsg                           ="لا توجد بيانات";
+ServerErrorMsg                           ="يوجد مشكلة بالخادم";
+UserFieldsText                           =" الأسم / اسم المستخدم / الرقم الوظيفي";
+UserNameText                             ="الأسم";
+UserUsernameText                         ="اسم المستخدم";
+UserJobCodeText                          ="الرقم الوظيفي";
+UserJobTitleText                         ="المسمى الوظيفي";
+/////////////////////////////update language//////////////////////////////////////////
+UpdateLanguageConfirmationMsg            ="تم تعديل اللغه بنجاح";
+LanguageUpdateError                      ="لم يتم تعديل اللغه على الخادم ، من فضلك حاول مره اخرى";
+/////////////////////////////Send Mail//////////////////////////////////////////
+NameMandatoryMsg                         ="ادخل الأسم";
+mobileNumMandatoryMsg                    ="ادخل رقم الهاتف";
+mobileNotValidMsg                        ="ادخل رقم هاتف صحيح";
+emailMandatoryMsg                        ="ادخل البريد الألكتروني";
+emailNotValidMsg                         ="ادخل بريد الكتروني صحيح";
+messageMandatoryMsg                      ="ادخل الرسالة";
+EmailNameText                            ="الأسم";
+MobileNumText                            ="رقم الأتصال";
+EmailText                                ="البريد الألكتروني";
+MessageText                              ="الرسالة / الملاحظة";
+MailTitleText                            ="الملاحظات لأدارة المتابعة";
+salaryClaim                            ="في حال وجود ملاحظات على المستحقات المالية يمكن كتابة الرسالة لقسم الرواتب في عمادة شؤون أعضاء هيئة التدريس والموظفين وسيتم الرد آليا";

@@ -1,0 +1,390 @@
+
+/* Class = "UIButton"; normalTitle = "search"; ObjectID = "0d2-DV-gWE"; */
+"0d2-DV-gWE.normalTitle" = "search";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "0v0-ap-oUX"; */
+"0v0-ap-oUX.text" = "to";
+
+/* Class = "UIButton"; normalTitle = "search"; ObjectID = "1WH-em-PAQ"; */
+"1WH-em-PAQ.normalTitle" = "search";
+
+/* Class = "UILabel"; text = "/"; ObjectID = "1qw-iJ-pIL"; */
+"1qw-iJ-pIL.text" = "/";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "3tR-Fr-VSF"; */
+"3tR-Fr-VSF.normalTitle" = "Done";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "3zx-ZQ-fTz"; */
+"3zx-ZQ-fTz.text" = "to";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "4R7-Cy-A0s"; */
+"4R7-Cy-A0s.normalTitle" = "Done";
+
+/* Class = "UIButton"; normalTitle = "back"; ObjectID = "4iF-ex-jLk"; */
+"4iF-ex-jLk.normalTitle" = "back";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "4mW-q6-RXR"; */
+"4mW-q6-RXR.text" = "to";
+
+/* Class = "UIButton"; normalTitle = "back"; ObjectID = "5N0-uk-rPK"; */
+"5N0-uk-rPK.normalTitle" = "back";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "5hm-tY-KuB"; */
+"5hm-tY-KuB.text" = "to";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "6Yo-NX-Bx1"; */
+"6Yo-NX-Bx1.text" = "1";
+
+/* Class = "UILabel"; text = "اسم الخدمة:"; ObjectID = "6ii-RW-EEk"; */
+"6ii-RW-EEk.text" = "اسم الخدمة:";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "7YF-fq-tlu"; */
+"7YF-fq-tlu.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "back"; ObjectID = "7kl-2D-Azu"; */
+"7kl-2D-Azu.normalTitle" = "back";
+
+/* Class = "UIButton"; normalTitle = "تسجيل الدخول"; ObjectID = "7xR-tu-CoM"; */
+"7xR-tu-CoM.normalTitle" = "تسجيل الدخول";
+
+/* Class = "UIButton"; normalTitle = "search"; ObjectID = "9db-SR-C7v"; */
+"9db-SR-C7v.normalTitle" = "search";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "AEE-wr-37U"; */
+"AEE-wr-37U.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "APq-zG-m6i"; */
+"APq-zG-m6i.normalTitle" = "Done";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "B7A-zT-gyz"; */
+"B7A-zT-gyz.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "back"; ObjectID = "BQz-4q-DAH"; */
+"BQz-4q-DAH.normalTitle" = "back";
+
+/* Class = "UIButton"; normalTitle = "back"; ObjectID = "Ccf-lP-mMp"; */
+"Ccf-lP-mMp.normalTitle" = "back";
+
+/* Class = "UILabel"; text = "/"; ObjectID = "D27-Pl-3Wc"; */
+"D27-Pl-3Wc.text" = "/";
+
+/* Class = "UIButton"; normalTitle = "Salary"; ObjectID = "D5T-P6-HXi"; */
+"D5T-P6-HXi.normalTitle" = "Salary";
+
+/* Class = "UIButton"; normalTitle = "empty"; ObjectID = "DME-aL-Z2C"; */
+"DME-aL-Z2C.normalTitle" = "empty";
+
+/* Class = "UIButton"; normalTitle = "استخدم بصمتك للتسجيل"; ObjectID = "DRs-P6-eIo"; */
+"DRs-P6-eIo.normalTitle" = "استخدم بصمتك للتسجيل";
+
+/* Class = "UISearchBar"; placeholder = "اسم الموظف"; ObjectID = "Dga-dy-MNw"; */
+"Dga-dy-MNw.placeholder" = "اسم الموظف";
+
+/* Class = "UISearchBar"; Dga-dy-MNw.scopeButtonTitles[0] = "Title"; ObjectID = "Dga-dy-MNw"; */
+"Dga-dy-MNw.scopeButtonTitles[0]" = "Title";
+
+/* Class = "UISearchBar"; Dga-dy-MNw.scopeButtonTitles[1] = "Title"; ObjectID = "Dga-dy-MNw"; */
+"Dga-dy-MNw.scopeButtonTitles[1]" = "Title";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "Esf-JL-8Fw"; */
+"Esf-JL-8Fw.text" = "to";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "F8t-sM-nFc"; */
+"F8t-sM-nFc.title" = "Item";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "GD9-cQ-WZc"; */
+"GD9-cQ-WZc.title" = "Item";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "Ggz-RD-OmG"; */
+"Ggz-RD-OmG.text" = "to";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "HBJ-0X-bDp"; */
+"HBJ-0X-bDp.normalTitle" = "Done";
+
+/* Class = "UILabel"; text = "--/--/--"; ObjectID = "HOm-iE-mdY"; */
+"HOm-iE-mdY.text" = "--/--/--";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "I3E-s4-kmS"; */
+"I3E-s4-kmS.normalTitle" = "Cancel";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "Ij2-UO-7Jv"; */
+"Ij2-UO-7Jv.title" = "Item";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "J1o-fb-PEr"; */
+"J1o-fb-PEr.text" = "to";
+
+/* Class = "UIButton"; normalTitle = "allowance"; ObjectID = "KWK-ue-YWd"; */
+"KWK-ue-YWd.normalTitle" = "allowance";
+
+/* Class = "UILabel"; text = "14 of 14"; ObjectID = "KpB-h2-zXv"; */
+"KpB-h2-zXv.text" = "14 of 14";
+
+/* Class = "UILabel"; text = "/"; ObjectID = "Lu2-dm-Pmp"; */
+"Lu2-dm-Pmp.text" = "/";
+
+/* Class = "UIButton"; normalTitle = "Paid"; ObjectID = "Oa3-Ui-CNn"; */
+"Oa3-Ui-CNn.normalTitle" = "Paid";
+
+/* Class = "UIButton"; normalTitle = "back"; ObjectID = "Oba-4E-T53"; */
+"Oba-4E-T53.normalTitle" = "back";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "Oe4-jz-j45"; */
+"Oe4-jz-j45.text" = "to";
+
+/* Class = "UILabel"; text = "From"; ObjectID = "OmD-bp-YBQ"; */
+"OmD-bp-YBQ.text" = "From";
+
+/* Class = "UIButton"; normalTitle = "back"; ObjectID = "PL8-gm-Yl0"; */
+"PL8-gm-Yl0.normalTitle" = "back";
+
+/* Class = "UIButton"; normalTitle = "back"; ObjectID = "R7z-Ch-RxU"; */
+"R7z-Ch-RxU.normalTitle" = "back";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "S0z-65-Zyi"; */
+"S0z-65-Zyi.text" = "-";
+
+/* Class = "UILabel"; text = "/"; ObjectID = "SGJ-9N-5zn"; */
+"SGJ-9N-5zn.text" = "/";
+
+/* Class = "UIButton"; normalTitle = "back"; ObjectID = "SLz-FL-p6i"; */
+"SLz-FL-p6i.normalTitle" = "back";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "Sa8-dF-PCW"; */
+"Sa8-dF-PCW.text" = "to";
+
+/* Class = "UILabel"; text = "999"; ObjectID = "SyI-aF-ntX"; */
+"SyI-aF-ntX.text" = "999";
+
+/* Class = "UIButton"; normalTitle = "back"; ObjectID = "TAD-oV-wdJ"; */
+"TAD-oV-wdJ.normalTitle" = "back";
+
+/* Class = "UIButton"; normalTitle = "back"; ObjectID = "TDl-Ml-vgf"; */
+"TDl-Ml-vgf.normalTitle" = "back";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "UMd-yv-4Ks"; */
+"UMd-yv-4Ks.title" = "Item";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "Ua1-4M-ChD"; */
+"Ua1-4M-ChD.text" = "-";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "Ua6-s2-yZX"; */
+"Ua6-s2-yZX.text" = "to";
+
+/* Class = "UIButton"; normalTitle = "deduction"; ObjectID = "Ue2-sa-h7u"; */
+"Ue2-sa-h7u.normalTitle" = "deduction";
+
+/* Class = "UILabel"; text = "/"; ObjectID = "Vvb-Ku-DQc"; */
+"Vvb-Ku-DQc.text" = "/";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "VzZ-dt-EHk"; */
+"VzZ-dt-EHk.text" = "1";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "WG8-fe-OOS"; */
+"WG8-fe-OOS.text" = "to";
+
+/* Class = "UISegmentedControl"; WNA-Mk-3TE.segmentTitles[0] = "Paid"; ObjectID = "WNA-Mk-3TE"; */
+"WNA-Mk-3TE.segmentTitles[0]" = "Paid";
+
+/* Class = "UISegmentedControl"; WNA-Mk-3TE.segmentTitles[1] = "Not Paid"; ObjectID = "WNA-Mk-3TE"; */
+"WNA-Mk-3TE.segmentTitles[1]" = "Not Paid";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "WSg-Pi-vte"; */
+"WSg-Pi-vte.text" = "-";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "X96-Qf-Zau"; */
+"X96-Qf-Zau.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "Payment"; ObjectID = "XNT-cv-S7u"; */
+"XNT-cv-S7u.normalTitle" = "Payment";
+
+/* Class = "UILabel"; text = "From"; ObjectID = "Y5c-Al-YYD"; */
+"Y5c-Al-YYD.text" = "From";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "YOZ-lb-1t7"; */
+"YOZ-lb-1t7.normalTitle" = "Send";
+
+/* Class = "UIButton"; normalTitle = "back"; ObjectID = "Ycm-e4-pdD"; */
+"Ycm-e4-pdD.normalTitle" = "back";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "Z3d-ut-dXU"; */
+"Z3d-ut-dXU.title" = "Item";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "Z7p-YX-QIp"; */
+"Z7p-YX-QIp.text" = "-";
+
+/* Class = "UITextView"; text = "\nالخدمات الإلكترونية لأعضاء هيئة التدريس والموظفي جامعة الملك سعود\nتوفر جامعة الملك سعود ممثلة عمادة القبول والتسجيل و عمادة التعاملات الإلكترونية و الاتصالات الكثير من الخدمات القيمة للموظفين،\nولذا رغبة لتحقيق أهداف هذه الخدمات الإلكترونية بشكل تفاعلي و جذاب للمستخدم و بشكل متنقل في الأجهزة المحمولة الذكية، فقد تم إطلاق تطبيق خدمات أعضاء هيئة التدريس والموظفي جامعة الملك سعود.\nخدمات التطبيق:\n- إمكانية رؤية الرواتب حسب الأشهر.\n- إمكانية رؤية المدفوعات حسب السنوات.\n- إمكانية رؤية رصيد الإجازات.\n- إمكانية رؤية الطلبات حسب السنوات.\n- إمكانية رؤية المهام.\n\nمميزات التطبيق:\n- إمكانية الإعتراض على الرواتب.\n- إمكانية تحديث الملف الشخصي.\n"; ObjectID = "ZeY-MJ-rKv"; */
+"ZeY-MJ-rKv.text" = "\nالخدمات الإلكترونية لأعضاء هيئة التدريس والموظفي جامعة الملك سعود\nتوفر جامعة الملك سعود ممثلة عمادة القبول والتسجيل و عمادة التعاملات الإلكترونية و الاتصالات الكثير من الخدمات القيمة للموظفين،\nولذا رغبة لتحقيق أهداف هذه الخدمات الإلكترونية بشكل تفاعلي و جذاب للمستخدم و بشكل متنقل في الأجهزة المحمولة الذكية، فقد تم إطلاق تطبيق خدمات أعضاء هيئة التدريس والموظفي جامعة الملك سعود.\nخدمات التطبيق:\n- إمكانية رؤية الرواتب حسب الأشهر.\n- إمكانية رؤية المدفوعات حسب السنوات.\n- إمكانية رؤية رصيد الإجازات.\n- إمكانية رؤية الطلبات حسب السنوات.\n- إمكانية رؤية المهام.\n\nمميزات التطبيق:\n- إمكانية الإعتراض على الرواتب.\n- إمكانية تحديث الملف الشخصي.\n";
+
+/* Class = "UIButton"; normalTitle = "empty"; ObjectID = "a34-NW-1TV"; */
+"a34-NW-1TV.normalTitle" = "empty";
+
+/* Class = "UILabel"; text = "/"; ObjectID = "aP7-Ps-IwL"; */
+"aP7-Ps-IwL.text" = "/";
+
+/* Class = "UIButton"; normalTitle = "Unpaid"; ObjectID = "af5-7H-5sY"; */
+"af5-7H-5sY.normalTitle" = "Unpaid";
+
+/* Class = "UILabel"; text = "/"; ObjectID = "bo7-p9-ORF"; */
+"bo7-p9-ORF.text" = "/";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "cZd-RN-u5r"; */
+"cZd-RN-u5r.text" = "to";
+
+/* Class = "UILabel"; text = "/"; ObjectID = "dvu-LV-Sav"; */
+"dvu-LV-Sav.text" = "/";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "edO-x6-l2Z"; */
+"edO-x6-l2Z.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "back"; ObjectID = "eip-yJ-w5x"; */
+"eip-yJ-w5x.normalTitle" = "back";
+
+/* Class = "UIButton"; normalTitle = "back"; ObjectID = "epL-iG-t6g"; */
+"epL-iG-t6g.normalTitle" = "back";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "epz-8w-hJX"; */
+"epz-8w-hJX.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "search"; ObjectID = "etW-OL-l7a"; */
+"etW-OL-l7a.normalTitle" = "search";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "fE1-69-fSb"; */
+"fE1-69-fSb.normalTitle" = "Cancel";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "fNz-nq-DGz"; */
+"fNz-nq-DGz.normalTitle" = "Send";
+
+/* Class = "UIButton"; normalTitle = "empty"; ObjectID = "fhi-h3-3gD"; */
+"fhi-h3-3gD.normalTitle" = "empty";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "fzE-Nm-giU"; */
+"fzE-Nm-giU.title" = "Item";
+
+/* Class = "UILabel"; text = "From"; ObjectID = "gmN-b8-W0e"; */
+"gmN-b8-W0e.text" = "From";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "hD4-jp-WNz"; */
+"hD4-jp-WNz.text" = "-";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "itW-cS-mfc"; */
+"itW-cS-mfc.text" = "to";
+
+/* Class = "UILabel"; text = "From"; ObjectID = "jeB-0e-8Uu"; */
+"jeB-0e-8Uu.text" = "From";
+
+/* Class = "UILabel"; text = "/"; ObjectID = "ka6-8M-dAO"; */
+"ka6-8M-dAO.text" = "/";
+
+/* Class = "UIButton"; normalTitle = "payment info"; ObjectID = "kdV-gh-qBh"; */
+"kdV-gh-qBh.normalTitle" = "payment info";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "l9V-Qr-oRV"; */
+"l9V-Qr-oRV.title" = "Item";
+
+/* Class = "UILabel"; text = "From"; ObjectID = "loY-vd-5xT"; */
+"loY-vd-5xT.text" = "From";
+
+/* Class = "UILabel"; text = "/"; ObjectID = "mhL-XU-xgf"; */
+"mhL-XU-xgf.text" = "/";
+
+/* Class = "UILabel"; text = "ho"; ObjectID = "mod-gv-GXB"; */
+"mod-gv-GXB.text" = "ho";
+
+/* Class = "UILabel"; text = "/"; ObjectID = "mpS-gG-ycA"; */
+"mpS-gG-ycA.text" = "/";
+
+/* Class = "UIButton"; normalTitle = "back"; ObjectID = "mzY-Ck-a8n"; */
+"mzY-Ck-a8n.normalTitle" = "back";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "nJn-Ye-nVq"; */
+"nJn-Ye-nVq.normalTitle" = "Send";
+
+/* Class = "UIButton"; normalTitle = "Verify"; ObjectID = "nlL-ph-oja"; */
+"nlL-ph-oja.normalTitle" = "Verify";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "oIW-HN-Pcm"; */
+"oIW-HN-Pcm.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "oKR-di-bAX"; */
+"oKR-di-bAX.text" = "to";
+
+/* Class = "UIButton"; normalTitle = "نسيت كلمة المرور"; ObjectID = "p0E-kG-E17"; */
+"p0E-kG-E17.normalTitle" = "نسيت كلمة المرور";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "pTb-go-SZm"; */
+"pTb-go-SZm.text" = "to";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "ppD-dM-KaQ"; */
+"ppD-dM-KaQ.title" = "Item";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "rfw-YM-bH7"; */
+"rfw-YM-bH7.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "استعلام عن المعاملات الالكترونية"; ObjectID = "rfy-6q-BhC"; */
+"rfy-6q-BhC.normalTitle" = "استعلام عن المعاملات الالكترونية";
+
+/* Class = "UIButton"; normalTitle = "back"; ObjectID = "rvb-lR-g4G"; */
+"rvb-lR-g4G.normalTitle" = "back";
+
+/* Class = "UIButton"; normalTitle = "back"; ObjectID = "s3x-mV-mzF"; */
+"s3x-mV-mzF.normalTitle" = "back";
+
+/* Class = "UIButton"; normalTitle = "back"; ObjectID = "sEu-ui-RJy"; */
+"sEu-ui-RJy.normalTitle" = "back";
+
+/* Class = "UILabel"; text = "From"; ObjectID = "uDa-3W-PWn"; */
+"uDa-3W-PWn.text" = "From";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "utY-FJ-7u1"; */
+"utY-FJ-7u1.normalTitle" = "Send";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "uu6-9r-jrn"; */
+"uu6-9r-jrn.text" = "-";
+
+/* Class = "UISegmentedControl"; vT5-AL-73g.segmentTitles[0] = "Saturday"; ObjectID = "vT5-AL-73g"; */
+"vT5-AL-73g.segmentTitles[0]" = "Saturday";
+
+/* Class = "UISegmentedControl"; vT5-AL-73g.segmentTitles[1] = "Sunday"; ObjectID = "vT5-AL-73g"; */
+"vT5-AL-73g.segmentTitles[1]" = "Sunday";
+
+/* Class = "UISegmentedControl"; vT5-AL-73g.segmentTitles[2] = "Monday"; ObjectID = "vT5-AL-73g"; */
+"vT5-AL-73g.segmentTitles[2]" = "Monday";
+
+/* Class = "UISegmentedControl"; vT5-AL-73g.segmentTitles[3] = "Tuesday"; ObjectID = "vT5-AL-73g"; */
+"vT5-AL-73g.segmentTitles[3]" = "Tuesday";
+
+/* Class = "UISegmentedControl"; vT5-AL-73g.segmentTitles[4] = "Wednesday"; ObjectID = "vT5-AL-73g"; */
+"vT5-AL-73g.segmentTitles[4]" = "Wednesday";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "vZN-jh-xAv"; */
+"vZN-jh-xAv.title" = "Item";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "viX-Db-ekE"; */
+"viX-Db-ekE.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "back"; ObjectID = "vmg-uk-kVd"; */
+"vmg-uk-kVd.normalTitle" = "back";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "vye-V0-ZZ6"; */
+"vye-V0-ZZ6.text" = "to";
+
+/* Class = "UILabel"; text = "ho"; ObjectID = "wuf-xU-2ij"; */
+"wuf-xU-2ij.text" = "ho";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "xsT-pV-c67"; */
+"xsT-pV-c67.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "back"; ObjectID = "xuq-Bv-mfs"; */
+"xuq-Bv-mfs.normalTitle" = "back";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "ytc-A5-R81"; */
+"ytc-A5-R81.text" = "to";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "z0e-VB-KaZ"; */
+"z0e-VB-KaZ.text" = "1";
+
+/* Class = "UILabel"; text = "/"; ObjectID = "z4k-74-gpa"; */
+"z4k-74-gpa.text" = "/";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "znN-96-YsI"; */
+"znN-96-YsI.text" = "to";
