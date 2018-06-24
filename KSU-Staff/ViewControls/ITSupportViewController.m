@@ -155,11 +155,11 @@
 
 -(BOOL)validate{
     if([StaticFuntions isStringEmpty:subjectTxt.text]){
-        [StaticFuntions showAlertWithTitle:ErrorGeneralTitle Message:ItSupportSubMandMSG];
+        [StaticFuntions showAlertWithTitle:@"" Message:ItSupportSubMandMSG];
         return NO;
     }
     if([StaticFuntions isStringEmpty:messageTxt.text]){
-        [StaticFuntions showAlertWithTitle:ErrorGeneralTitle Message:ItSupportTextMandMSG];
+        [StaticFuntions showAlertWithTitle:@"" Message:ItSupportTextMandMSG];
         return NO;
     }
     return YES;
@@ -178,7 +178,8 @@
         UIViewController * viewController = [self.storyboard instantiateViewControllerWithIdentifier:SeagueDashBoardScreen];
         [self.navigationController pushViewController:viewController animated:NO];
     }else{
-        [StaticFuntions showAlertWithTitle:ErrorGeneralTitle Message:error.errorMessage];
+        [StaticFuntions showAlertWithTitle:@""
+                                Message:error.errorMessage];
     }
 }
 

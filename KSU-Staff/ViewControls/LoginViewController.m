@@ -551,8 +551,10 @@
                     [StaticFuntions createTouchIDFile:appdelegate.EmployeeObj];
             }
             
-            [[RequestManager sharedInstance] updateLanguage:self];
-            [self showActivityViewer];
+            [self.navigationController setNavigationBarHidden:false animated:true];
+            UIViewController * viewController = [self.storyboard instantiateViewControllerWithIdentifier:SeagueDashBoardScreen];
+            [self.navigationController pushViewController:viewController animated:NO];
+
         }
         else if ([service intValue]==(int)UpdateLanguage_WS)
         {

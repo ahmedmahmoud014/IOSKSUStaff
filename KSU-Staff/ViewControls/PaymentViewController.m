@@ -64,7 +64,7 @@
     
     [self expandTableSections];
     dateView.hidden=YES;
-    [dateView initIslamicDateWithMonths:NO withDay:NO withDelegate:self withMaxDate:YES withMinDate:FALSE isForceHijri:NO];
+    [dateView initIslamicDateWithMonths:NO withDay:NO withDelegate:self withMaxDate:YES withMinDate:FALSE isForceHijri:YES];
     //paidSegment.selectedSegmentIndex=0;
     pObj=[[PaymentObj alloc] init];
     pObj.isPaid=YES;
@@ -94,7 +94,7 @@
     
     
     titleLbl.text=paymentDBText;
-    yearLbl.text=[StaticFuntions getTodayYear:FALSE];
+    yearLbl.text=[StaticFuntions getTodayYearForSalary:TRUE];
     [paidBtn setTitle:PaymentPaidText forState:UIControlStateNormal];
     [unpaidBtn setTitle:PaymentNotPaidText forState:UIControlStateNormal];
     
@@ -387,7 +387,7 @@
     [self visable_hideDateControl:YES];
     if(selectedDate==nil)return;
     date=selectedDate;
-    yearLbl.text=[StaticFuntions getYearForDate:selectedDate forceHijri:FALSE forceEnLocale:FALSE];
+    yearLbl.text=[StaticFuntions getYearForDate:selectedDate forceHijri:true forceEnLocale:FALSE];
     [self connect];
 }
 

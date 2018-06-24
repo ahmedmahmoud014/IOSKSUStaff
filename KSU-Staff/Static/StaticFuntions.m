@@ -332,30 +332,30 @@
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
 
-    if(appDelegate.currentLang==English){
-    if (checkCall ==true ){
-    NSCalendar *islamicCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierIslamicUmmAlQura];
-    [islamicCalendar rangeOfUnit:NSCalendarUnitDay startDate:&date interval:NULL forDate:date];
-    
-    NSDateComponents* components = [islamicCalendar components:NSCalendarUnitMonth fromDate:date]; // Get necessary date components
-    monthString=[ NSString stringWithFormat:@"%02d" ,(int)[components month]];
-    
-    }
-    else {
-        NSCalendar *islamicCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierIslamicUmmAlQura];
-        [islamicCalendar rangeOfUnit:NSCalendarUnitDay startDate:&date interval:NULL forDate:date];
-        
-        NSDateComponents* components = [islamicCalendar components:NSCalendarUnitMonth fromDate:date]; // Get necessary date components
-        monthString=[ NSString stringWithFormat:@"%02d" ,(int)[components month]+1];
-    }
-    }
-    else {
+//    if(appDelegate.currentLang==English){
+//    if (checkCall ==true ){
+//    NSCalendar *islamicCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierIslamicUmmAlQura];
+//    [islamicCalendar rangeOfUnit:NSCalendarUnitDay startDate:&date interval:NULL forDate:date];
+//
+//    NSDateComponents* components = [islamicCalendar components:NSCalendarUnitMonth fromDate:date]; // Get necessary date components
+//    monthString=[ NSString stringWithFormat:@"%02d" ,(int)[components month]];
+//
+//    }
+//    else {
+//        NSCalendar *islamicCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierIslamicUmmAlQura];
+//        [islamicCalendar rangeOfUnit:NSCalendarUnitDay startDate:&date interval:NULL forDate:date];
+//
+//        NSDateComponents* components = [islamicCalendar components:NSCalendarUnitMonth fromDate:date]; // Get necessary date components
+//        monthString=[ NSString stringWithFormat:@"%02d" ,(int)[components month]+1];
+//    }
+//    }
+//    else {
         NSCalendar *islamicCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierIslamicUmmAlQura];
         [islamicCalendar rangeOfUnit:NSCalendarUnitDay startDate:&date interval:NULL forDate:date];
         
         NSDateComponents* components = [islamicCalendar components:NSCalendarUnitMonth fromDate:date]; // Get necessary date components
         monthString=[ NSString stringWithFormat:@"%02d" ,(int)[components month]];
-    }
+   // }
     return monthString;
     
 }

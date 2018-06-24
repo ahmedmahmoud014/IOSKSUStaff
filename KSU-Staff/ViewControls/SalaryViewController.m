@@ -1,4 +1,4 @@
-//
+ //
 //  SalaryViewController.m
 //  KSU-Staff
 //
@@ -396,7 +396,7 @@
                 float totalDesrve=[sObj.totalDeserve floatValue];
                 float totalDiscount=[sObj.totalDiscount floatValue];
                 float net= totalDesrve-totalDiscount;
-                totalNetValLbl.text= [NSString stringWithFormat:@"%.2f",net];
+                totalNetValLbl.text=[NSString stringWithFormat:@"%.2f",net];
                 sObj.date=[NSString stringWithFormat:@"%@ - %@",monthLbl.text,yearLbl.text];
                  sObj.YEAR=yearLbl.text;
                  sObj.MONTH =monthLbl.text;

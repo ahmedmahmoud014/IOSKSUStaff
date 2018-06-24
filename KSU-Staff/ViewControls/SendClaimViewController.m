@@ -127,7 +127,7 @@ UILabel * lbl;
 
 -(BOOL)validate{
     if([StaticFuntions isStringEmpty:claimTxt.text]){
-        [StaticFuntions showAlertWithTitle:ErrorGeneralTitle Message:sendClaimValidateMsgTxt];
+        [StaticFuntions showAlertWithTitle:@"" Message:sendClaimValidateMsgTxt];
         return NO;
     }
     return YES;

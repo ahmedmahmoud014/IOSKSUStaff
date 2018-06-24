@@ -2490,6 +2490,8 @@
           success:^(NSURLSessionDataTask *task, id responseObject) {
               [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
               
+              
+              NSLog(@"success language : %@",responseObject);
               id result = [responseObject objectForKeyedSubscript:updateLanguageResult_MW];
               
               id op_status= [result objectForKeyedSubscript:status_MW];

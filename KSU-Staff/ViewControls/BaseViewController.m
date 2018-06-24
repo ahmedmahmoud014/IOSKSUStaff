@@ -360,7 +360,10 @@
     [activityView removeFromSuperview];
     activityView = nil;
 }
-
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:YES];
+}
 #pragma mark - back button color
 
 + (UIColor*)getBackBtnColor{

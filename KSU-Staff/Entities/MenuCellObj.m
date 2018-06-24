@@ -21,14 +21,14 @@
 
 #pragma mark - get menu objects
 
-+(MenuCellObj*)getHomeMenu{
-    MenuCellObj *cell=[[MenuCellObj alloc] init];
-    cell.menuImg=[UIImage imageNamed:@"home.png"];
-    //cell.selectedMenuImg=[UIImage imageNamed:@"home_s.png"];
-    cell.isNotifSwitch=NO;
-    cell.menuName=MenuItemHomeText;
-    return cell;
-}
+//+(MenuCellObj*)getHomeMenu{
+//    MenuCellObj *cell=[[MenuCellObj alloc] init];
+////    cell.menuImg=[UIImage imageNamed:@"home.png"];
+////    //cell.selectedMenuImg=[UIImage imageNamed:@"home_s.png"];
+////    cell.isNotifSwitch=NO;
+////    cell.menuName=MenuItemHomeText;
+//    return cell;
+//}
 
 +(MenuCellObj*)getChangePWMenu{
     MenuCellObj *cell=[[MenuCellObj alloc] init];
@@ -131,9 +131,9 @@
 +(MenuCellObj*)getMenuForindex:(int)index{
     
     switch (index) {
-        case HomeItem:
-            return  [self getHomeMenu];
-            break;
+//        case HomeItem:
+//            //return  [self getHomeMenu];
+//            break;
         case EditProfileItem:
             return [self getEditProfileMenu];
             break;
@@ -177,9 +177,9 @@
 +(NSString*)getSeagueName:(int)index{
      AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     switch (index) {
-        case HomeItem:
-            return  SeagueDashBoardScreen;
-            break;
+//        case HomeItem:
+//            return  SeagueDashBoardScreen;
+//            break;
         case EditProfileItem:
             return SeagueEditProfileScreen;
             break;

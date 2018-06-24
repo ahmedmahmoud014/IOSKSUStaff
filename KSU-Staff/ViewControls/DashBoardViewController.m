@@ -46,7 +46,6 @@
     [obj initWithCatName: n  category_id:@"a1"  url_title:@"aa" offersPath:@"a" ];
     [array addObject:obj];
     }
-       NSLog(@"oreder array %ld ", array.count);
  //NSArray *sortedArray;
   [array sortUsingDescriptors:
      [NSMutableArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"fullName"

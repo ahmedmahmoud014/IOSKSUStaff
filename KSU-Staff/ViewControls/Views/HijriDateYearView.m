@@ -44,7 +44,7 @@
     
     
     NSDateComponents *comps = [[NSDateComponents alloc] init];
-    [comps setYear:1400];
+    [comps setYear:1431];
     NSDate *fromDate=[calendar dateFromComponents:comps];
     [yearPicker setMinimumDate:fromDate];
     delegate=del;

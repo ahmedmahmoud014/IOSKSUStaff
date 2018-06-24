@@ -17,8 +17,8 @@ typedef enum myLanguages{
 }MyLanguages;
 
 typedef enum mainMenuItems{
-    HomeItem=0,
-    ChangePWItem,
+    //HomeItem=0,
+    ChangePWItem = 0,
     getDocInquiryItem,
     SettingITem,
     LogoutItem,
@@ -82,7 +82,7 @@ typedef enum service{
 #define minPWLenght                               6
 #define countStartJobYear                         4
 #define NumberSettingItems                        4
-#define NumberMenuItems                           5//9//10
+#define NumberMenuItems                           4//5//9//10
 #define MenuStartX                                70
 #define MenuStartXIPad                            100
 #define NumberDashBoardItems                      10//9

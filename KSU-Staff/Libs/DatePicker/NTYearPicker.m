@@ -59,8 +59,8 @@ NSInteger _maximumYear2 = -1;
 
 // Default min/max year values used if minimumDate/maximumDate is not set
 // These values match that of UIDatePicker
-const NSInteger kMinYear2 = 1400;
-const NSInteger kMaxYear2 = 10000;
+const NSInteger kMinYear2 = 1431;
+const NSInteger kMaxYear2 = 1439;
 
 #pragma mark - Initialization
 
@@ -140,6 +140,9 @@ const NSInteger kMaxYear2 = 10000;
     NSDateComponents *comps = [[NSDateComponents alloc] init];
 
     NSMutableArray *years = [[NSMutableArray alloc] init];
+    
+if(appDelegate.currentLang==Arabic){
+    
     for( int year = kMinYear2 ; year <= kMaxYear2 ; ++year ) {
         [comps setYear:year];
         NSDate *yearDate = [self.calendar dateFromComponents:comps];
@@ -147,6 +150,18 @@ const NSInteger kMaxYear2 = 10000;
 
         [years addObject:yearStr];
     }
+}else {
+    [years addObject:@"2010"];
+    [years addObject:@"2011"];
+    [years addObject:@"2012"];
+    [years addObject:@"2013"];
+    [years addObject:@"2014"];
+    [years addObject:@"2015"];
+    [years addObject:@"2016"];
+    [years addObject:@"2017"];
+    [years addObject:@"2018"];
+
+}
     _years = years;
 }
 

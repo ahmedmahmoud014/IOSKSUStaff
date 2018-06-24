@@ -77,7 +77,7 @@ AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] del
     if (withMaxDate) {
         [self.picker setMaximumDate:today];
         NSDateComponents *comps = [[NSDateComponents alloc] init];
-        [comps setYear:1400];
+        [comps setYear:1431];
         NSDate *fromDate=[calendar dateFromComponents:comps];
         [self.picker setMinimumDate:fromDate];
         

@@ -1533,9 +1533,9 @@ NSInteger servicePreviousRowDelegation;
             if (currentypos >= (scrollView.contentSize.height - (delegationTableView.frame.size.height)))
             {
                 BOOL scrolled = FALSE;
-                noDataLbl.hidden=YES;
                 DelegationObj *obj;
                 if (delegationsCount > [listOfDelegations count]) {
+                    noDataLbl.hidden=YES;
                     scrolled = YES;
                     obj = [listOfDelegations lastObject];
                 }
@@ -1547,6 +1547,11 @@ NSInteger servicePreviousRowDelegation;
                 }
                 
             }
+        }
+        else{
+            if(listOfDelegations.count == 0)
+            noDataLbl.hidden=NO;
+
         }
     }
     

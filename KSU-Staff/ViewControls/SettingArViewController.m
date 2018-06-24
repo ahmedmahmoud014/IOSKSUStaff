@@ -180,7 +180,7 @@
 }
 
 -(void)showLanguageAlert{
-    UIAlertView *alert=[[UIAlertView alloc] initWithTitle:ApplicationTitleText message:changeLangMsgText delegate:self cancelButtonTitle: OKayButtonText otherButtonTitles:CancelButtonText, nil];
+    UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"" message:changeLangMsgText delegate:self cancelButtonTitle: OKayButtonText otherButtonTitles:CancelButtonText, nil];
     [alert show];
 }
 

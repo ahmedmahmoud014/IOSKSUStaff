@@ -132,7 +132,7 @@
     if(data!=nil){
         claimLstArr=(NSMutableArray*)data;
     }else{
-        [StaticFuntions showAlertWithTitle:ErrorGeneralTitle Message:error.errorMessage];
+        [StaticFuntions showAlertWithTitle:@"" Message:error.errorMessage];
     }
     [tableView reloadData];
 }

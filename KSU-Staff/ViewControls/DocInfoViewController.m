@@ -208,6 +208,7 @@ NSInteger previousrow;
     date=[NSDate date];
     
     yearView.hidden=YES;
+
     [yearView initIslamicDatewithDelegate:self];
     
     changeDate1Btn.enabled = YES;
@@ -850,7 +851,7 @@ NSInteger previousrow;
     [dateView initIslamicDateWithMonths:YES withDay:YES withDelegate:self withMaxDate:YES withMinDate:FALSE isForceHijri:NO];
     [dateView.picker setDate:date];
     
-    [yearView initIslamicDatewithDelegate:self];
+    //[yearView initIslamicDatewithDelegate:self];
     [yearView.yearPicker setDate:date];
 }
 
@@ -1093,7 +1094,42 @@ NSInteger previousrow;
     }
     else if (yearView.hidden == FALSE)
     {
-        logBookyearLbl.text=[StaticFuntions getYearForDate:selectedDate forceHijri:FALSE forceEnLocale:FALSE];
+        AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+        if(appDelegate.currentLang==Arabic){
+            
+            logBookyearLbl.text=[StaticFuntions getYearForDate:selectedDate forceHijri:false forceEnLocale:FALSE];
+            
+        }else{
+
+            NSString * year_value=[StaticFuntions getYearForDate:selectedDate forceHijri:FALSE forceEnLocale:FALSE];
+            if ([year_value  isEqual: @"1439"]){
+                logBookyearLbl.text =@"2018";
+            }
+            else if([year_value  isEqual: @"1438"]){
+                logBookyearLbl.text =@"2017";
+
+            }else if([year_value  isEqual: @"1437"]){
+                logBookyearLbl.text =@"2016";
+                
+            }else if([year_value  isEqual: @"1436"]){
+                logBookyearLbl.text =@"2015";
+                
+            }else if([year_value  isEqual: @"1435"]){
+                logBookyearLbl.text =@"2014";
+                
+            }else if([year_value  isEqual: @"1434"]){
+                logBookyearLbl.text =@"2013";
+                
+            }else if([year_value  isEqual: @"1433"]){
+                logBookyearLbl.text =@"2012";
+                
+            }else if([year_value  isEqual: @"1432"]){
+                logBookyearLbl.text =@"2011";
+                
+            }else{
+                logBookyearLbl.text =@"2010";
+            }
+        }
     }
 
     
