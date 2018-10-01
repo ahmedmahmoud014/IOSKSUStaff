@@ -32,6 +32,7 @@
 @synthesize summaryView;
 @synthesize summaryLbl;
 @synthesize selectionView;
+//@synthesize homeBtn , menuBtn;
 @synthesize allowanceBtn,allowanceSelection,paymentBtn,paymentSelection,deductionBtn,deductionSelection;
 
 @synthesize sendClaimBtn,ClaimLstBtn;
@@ -46,6 +47,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self customizeNavigationBar:YES WithMenu:YES];
+    
+
+    // navigation  button  replace
+    [self replaceHomeAndMenu:_homeBtn :_menuBtn];
+    
+ 
     
     if(IS_IPAD){
         int x= (self.view.frame.size.width- controlsView.frame.size.width)/2;
@@ -68,6 +75,16 @@
 }
 */
 
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:true animated:animated];
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+}
 #pragma mark - base methods
 
 -(void)initalizeViews{
@@ -424,5 +441,34 @@
         noDataImg.hidden=FALSE;
     }
     [tableView reloadData];
+}
+
+- (IBAction)btnHomeOrMenuPress:(UIButton *)sender {
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    UIButton *button = (UIButton *)sender;
+    NSInteger *tag  =  [button tag];
+    // menu button
+    if (tag ==  0 )  {
+        
+        if(appDelegate.currentLang==Arabic)
+        {
+            [self showMenu];
+        }else{
+            [self  backHome];
+        }
+        
+        
+        
+    }
+    // home button
+    else {
+        if(appDelegate.currentLang==Arabic)
+        {
+            [self  backHome];
+        }else{
+            [self showMenu];
+        }
+        
+    }
 }
 @end

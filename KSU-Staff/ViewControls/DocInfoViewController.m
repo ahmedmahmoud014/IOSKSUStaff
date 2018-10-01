@@ -50,6 +50,9 @@ NSInteger previousrow;
     [super viewDidLoad];
   
     
+    // navigation  button  replace 
+    [self replaceHomeAndMenu:_homeBtn :_menuBtn];
+
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     if(appDelegate.currentLang==English){
         
@@ -112,6 +115,16 @@ NSInteger previousrow;
         controlsView.frame = frame;
     }
     
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:true animated:animated];
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
 }
 
 -(void)textFieldDidEndEditing:(UITextField *)textField
@@ -1165,4 +1178,35 @@ NSInteger previousrow;
     }
 }
 
+
+// custom  navigation  bar
+
+- (IBAction)btnHomeOrMenuPress:(UIButton *)sender {
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    UIButton *button = (UIButton *)sender;
+    NSInteger *tag  =  [button tag];
+    // menu button
+    if (tag ==  0 )  {
+        
+        if(appDelegate.currentLang==Arabic)
+        {
+            [self showMenu];
+        }else{
+            [self  backHome];
+        }
+        
+        
+        
+    }
+    // home button
+    else {
+        if(appDelegate.currentLang==Arabic)
+        {
+            [self  backHome];
+        }else{
+            [self showMenu];
+        }
+        
+    }
+}
 @end

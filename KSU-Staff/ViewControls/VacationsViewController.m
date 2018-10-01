@@ -28,6 +28,7 @@
         int x= (self.view.frame.size.width- controlsView.frame.size.width)/2;
         controlsView.frame=CGRectMake(x, controlsView.frame.origin.y, controlsView.frame.size.width, controlsView.frame.size.height);
     }
+    
 }
 
 - (void)didReceiveMemoryWarning {

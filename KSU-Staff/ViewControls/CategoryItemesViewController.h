@@ -45,7 +45,7 @@
 @property (weak, nonatomic) IBOutlet UIView *orderItems;
 @property(nonatomic,retain) IBOutlet UILabel *titleLbl;
 @property(nonatomic,retain) IBOutlet UITableView *tableView;
-@property (nonatomic, retain) NSString *cat_URl;
+@property (nonatomic, retain)  NSString *cat_URl;
 @property (nonatomic, retain) NSString *cat_Name;
 @property (nonatomic, retain)  NSMutableArray *dataArray;
 @property (nonatomic, assign) NSString *checkOrder;
@@ -55,5 +55,8 @@
 -(void) assignValueForOrderItems;
 - (IBAction)backToCategory:(id)sender;
 
-
+// for custom  menu  bar
+@property (weak, nonatomic) IBOutlet UIButton *menuBtn;
+@property (weak, nonatomic) IBOutlet UIButton *homeBtn;
+- (IBAction)btnHomeOrMenuPress:(UIButton *)sender;
 @end

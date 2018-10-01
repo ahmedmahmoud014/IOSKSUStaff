@@ -42,8 +42,16 @@
     
 }
 
+
+- (void)moveToNext:(UIViewController *)vcName{
+    [self.navigationController pushViewController:vcName animated:NO];
+
+}
+
 -(void) viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+
     [self switchLayout];
     [self locatizeLables];
     
@@ -54,14 +62,15 @@
     
     
 }
+
 - (void)customizeNavigationBar:(BOOL)withHome WithMenu:(BOOL)withMenu   {
-    
+
     if ([self.navigationController respondsToSelector:@selector(setPanning:)]) {
         CustomNavigationController * navigation = (CustomNavigationController *)self.navigationController;
         [navigation setPanning:withMenu];
     }
     
-    self.navigationController.navigationBar.hidden = NO;
+//    self.navigationController.navigationBar.hidden = NO;
     
     self.navigationController.navigationBar.translucent = NO;
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
@@ -87,12 +96,14 @@
        
         
     }else {
-        backgroundImage = [UIImage imageNamed:@"header.png"];
+        backgroundImage = [UIImage imageNamed:@"header_20"];
         [[UIBarButtonItem appearance] setTintColor:[UIColor whiteColor]];
         [[[self navigationController] navigationBar] setTintColor:[UIColor whiteColor]];
     }
     
     if (withMenu) {
+        
+        printf("ttttttttttttmenu",  self.view.frame.size.width - 46);
         UIButton *menubarButton = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.size.width - 46, BUTTONS_Y, BUTTONS_SIZE, BUTTONS_SIZE)];
 //        UIButton *menubarButton = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.size.width - 46, 15, 36, 36)];
         [menubarButton setImage:[UIImage imageNamed:@"menu_btn"] forState:UIControlStateNormal];
@@ -117,6 +128,8 @@
     }
     if (withHome) {
         UIButton *homebarButton = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.size.width - 80, BUTTONS_Y, BUTTONS_SIZE, BUTTONS_SIZE)];
+        printf("tttttttttttthhhh",  self.view.frame.size.width - 80);
+
 //        UIButton *homebarButton = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.size.width - 80, 15, 36, 36)];
         [homebarButton setImage:[UIImage imageNamed:@"home_btn"] forState:UIControlStateNormal];
        // [homebarButton setImage:[UIImage imageNamed:@"home_btn_pressed"] forState:UIControlStateHighlighted];
@@ -397,4 +410,100 @@
     UIViewController * viewController = [self.storyboard instantiateViewControllerWithIdentifier:SeagueLoginScreen];
     [self.navigationController pushViewController:viewController animated:NO];
 }
+
+
+//  custom  navigation  bar
+- (void)showMenu{
+    self.viewDeckController.panningCancelsTouchesInView=YES;
+    
+    AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    CustomNavigationController *nav = (    CustomNavigationController *)self.navigationController;
+    if(delegate.currentLang==English){
+        
+        [nav.viewDeckController toggleLeftViewAnimated:YES];
+    }else{
+        
+        [nav.viewDeckController toggleRightViewAnimated:YES];
+    }
+    
+}
+-(void)backHome{
+    
+    AppDelegate *appdelegate=(AppDelegate *)[[UIApplication sharedApplication] delegate];
+    ProfileObj * obj= [StaticFuntions getSavedData];
+    
+    if (!appdelegate.islogOut) {
+        
+        if (obj==nil || obj.userName == nil || [StaticFuntions isStringEmpty:obj.userName]) {
+            // Check if User is stored or not
+            LoginViewController *dash = [self.storyboard instantiateViewControllerWithIdentifier:SeagueLoginScreen];
+            if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")) {
+                [self.navigationController pushViewController:dash animated:NO];
+            } else {
+                for (UIViewController *viewController in self.navigationController.viewControllers) {
+                    if ([viewController class] == [LoginViewController class]) {
+                        [self.navigationController popToViewController:viewController animated:NO];
+                        break;
+                    }
+                }
+            }
+        } else {
+            // Logged In
+            DashBoardViewController *dash=[self.storyboard instantiateViewControllerWithIdentifier:SeagueDashBoardScreen];
+            if(SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")){
+                [self.navigationController pushViewController:dash animated:NO];
+            }else{
+                for (UIViewController *viewController in self.navigationController.viewControllers) {
+                    if ([viewController class] == [DashBoardViewController class]) {
+                        [self.navigationController popToViewController:viewController animated:NO];
+                        break;
+                        
+                    }
+                }
+            }
+        }
+    }
+    else
+    {
+        LoginViewController *dash=[self.storyboard instantiateViewControllerWithIdentifier:SeagueLoginScreen];
+        if(SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")){
+            [self.navigationController pushViewController:dash animated:NO];
+        }else{
+            for (UIViewController *viewController in self.navigationController.viewControllers) {
+                if ([viewController class] == [LoginViewController class]) {
+                    [self.navigationController popToViewController:viewController animated:NO];
+                    break;
+                    
+                }
+            }
+        }
+    }
+    
+    
+    
+    
+}
+
+
+- (void)replaceHomeAndMenu:(UIButton *)homeBtn :(UIButton *)menuBtn{
+    
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    if(appDelegate.currentLang==Arabic)
+    {
+        
+        [homeBtn setImage:[UIImage imageNamed:@"home_btn.png"] forState:UIControlStateNormal];
+        [menuBtn setImage:[UIImage imageNamed:@"menu_btn.png"] forState: UIControlStateNormal];
+        
+        
+        
+        
+    }
+    else {
+        [menuBtn setImage:[UIImage imageNamed:@"home_btn.png"] forState:UIControlStateNormal];
+        [homeBtn setImage:[UIImage imageNamed:@"menu_btn.png"] forState: UIControlStateNormal];
+        
+    }
+    
+}
+
 @end

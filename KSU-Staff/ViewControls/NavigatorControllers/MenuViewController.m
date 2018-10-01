@@ -35,6 +35,17 @@
     return self;
 }
 
+
+
+//-(void)viewWillAppear:(BOOL)animated {
+//    [super viewWillAppear:animated];
+//}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+}
+
 #pragma mark - table delegate
 
 -(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -112,6 +123,7 @@
         if([[navigationController getTopView] class]!=[viewController class]){
             [navigationController pushViewController:viewController animated:NO];
         }
+        
         //[navigationController.viewDeckController toggleLeftViewAnimated:YES];
         [((BaseViewController*)[navigationController getTopView]) onMenuButtonPressed:nil];
     }
@@ -171,6 +183,8 @@
 #pragma mark - view
 
 - (void)viewWillAppear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:true animated:animated];
+
     [super viewWillAppear:animated];
     [self changeLocalization];
 

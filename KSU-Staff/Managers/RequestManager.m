@@ -490,9 +490,18 @@
              
              for (NSDictionary *cat in responseObject) {
                 Contact *contact = [[Contact alloc] init];;
-     
+                 
+                 printf("ereererererell \n ");
+
+                if ( [ cat[@"contact"] count ] !=   0 )
+                {
                 NSDictionary  *contactValue= cat[@"contact"][0];
+                 printf("ereerererere",[contactValue objectForKey:@"phone"]);
+
                  [contact initWithContact:[contactValue objectForKey:@"phone"] mobile:[ contactValue objectForKey:@"mobile"] email:[contactValue objectForKey:@"email"] website:[contactValue objectForKey:@"website"]  location:[contactValue objectForKey:@"location"] ];
+                }else {
+                     [contact initWithContact:@"" mobile:@""email:@"" website:@""  location:@""];
+                }
                  NSMutableArray *allIamge =[[NSMutableArray alloc]init];
                  NSArray *allImageValue=cat[@"slide_images"];
                  //for (NSString *imageUrl in  allImageValue ){
@@ -504,7 +513,9 @@
 //                 }
                  
                  CategoryListItems *obj=[[CategoryListItems alloc] init];
-                 [obj initWithCatItemName:cat[@"title"]status:cat[@"status"] created:cat[@"created"] description:cat[@"description"] expiration_date:cat[@"expiration_date"] offer_url:cat[@"offer_url"] contact:contact  benf:cat[@"benf"] discount_perc:cat[@"discount_perc"] likes:cat[@"likes"] dislikes:cat[@"dislikes"] keywords:cat[@"keywords"] slide_images:allImageValue];
+                 [obj 
+                  initWithCatItemName:cat[@"title"]status:cat[@"status"] created:cat[@"created"] description:cat[@"description"] expiration_date:cat[@"expiration_date"] offer_url:cat[@"offer_url"] contact:contact  benf:cat[@"benf"] discount_perc:cat[@"discount_perc"] likes:cat[@"likes"] dislikes:cat[@"dislikes"] keywords:cat[@"keywords"] slide_images:allImageValue];
+                
                  [categoriesArray addObject:obj];
                  
                 // NSLog(@"fullName: %@",  obj.title);

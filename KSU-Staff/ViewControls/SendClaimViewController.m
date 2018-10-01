@@ -11,6 +11,8 @@
 #import "StaticFuntions.h"
 #import "LocalizedMessages.h"
 #import "RequestManager.h"
+#import "AppDelegate.h"
+
 
 @interface SendClaimViewController ()
 
@@ -25,6 +27,8 @@ UILabel * lbl;
     // Do any additional setup after loading the view.
     [self customizeNavigationBar:YES WithMenu:YES];
     
+    // navigation  button  replace
+    [self replaceHomeAndMenu:_homeBtn :_menuBtn];
     if(IS_IPAD){
         int x= (self.view.frame.size.width- controlsView.frame.size.width)/2;
         controlsView.frame=CGRectMake(x, controlsView.frame.origin.y, controlsView.frame.size.width, controlsView.frame.size.height);
@@ -37,6 +41,16 @@ UILabel * lbl;
     // Dispose of any resources that can be recreated.
 }
 
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:true animated:animated];
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+}
 /*
  #pragma mark - Navigation
  
@@ -169,8 +183,9 @@ UILabel * lbl;
 
 -(IBAction)onCancelPressed:(id)sender{
     [claimTxt resignFirstResponder];
-    [self.navigationController popViewControllerAnimated:NO];
-
+    
+//    UIViewController * viewController = [self.storyboard instantiateViewControllerWithIdentifier:SeagueSalaryScreen];
+//    [self moveToNext:viewController];
 }
 
 
@@ -189,5 +204,37 @@ UILabel * lbl;
     NSUInteger newLength = [textView.text length] + [text length] - range.length;
     return (newLength > maxClaimMsgText) ? NO : YES;
     //return YES;
+}
+
+
+//navigation bar
+
+- (IBAction)btnHomeOrMenuPress:(UIButton *)sender {
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    UIButton *button = (UIButton *)sender;
+    NSInteger *tag  =  [button tag];
+    // menu button
+    if (tag ==  0 )  {
+        
+        if(appDelegate.currentLang==Arabic)
+        {
+            [self showMenu];
+        }else{
+            [self  backHome];
+        }
+        
+        
+        
+    }
+    // home button
+    else {
+        if(appDelegate.currentLang==Arabic)
+        {
+            [self  backHome];
+        }else{
+            [self showMenu];
+        }
+        
+    }
 }
 @end

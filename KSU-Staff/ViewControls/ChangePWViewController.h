@@ -54,4 +54,12 @@
 -(IBAction)onCancelPressed:(id)sender;
 
 
+@property (weak, nonatomic) IBOutlet UIButton *menuBtn;
+@property (weak, nonatomic) IBOutlet UIButton *homeBtn;
+- (IBAction)btnHomeOrMenuPress:(UIButton *)sender;
+
+-(void) showMenu;
+-(void) backHome;
+
+
 @end

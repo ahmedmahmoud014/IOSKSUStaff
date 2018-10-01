@@ -28,6 +28,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    // navigation  button  replace
+    [self replaceHomeAndMenu:_homeBtn :_menuBtn];
+    
     // Do any additional setup after loading the view.
     [self customizeNavigationBar:YES WithMenu:YES];
     if(IS_IPAD){
@@ -52,6 +57,17 @@
 */
 
 #pragma mark - base methods
+
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+}
 
 -(void)initalizeViews{
     self.BGImage.image= [UIImage imageNamed:@"bg.png"];
@@ -261,6 +277,38 @@
         [self.navigationController pushViewController:viewController animated:NO];
     }else{
         [StaticFuntions showAlertWithTitle:ErrorGeneralTitle Message:error.errorMessage];
+    }
+}
+
+
+
+//navigation bar
+- (IBAction)btnHomeOrMenuPress:(UIButton *)sender {
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    UIButton *button = (UIButton *)sender;
+    NSInteger *tag  =  [button tag];
+    // menu button
+    if (tag ==  0 )  {
+        
+        if(appDelegate.currentLang==Arabic)
+        {
+            [self showMenu];
+        }else{
+            [self  backHome];
+        }
+        
+        
+        
+    }
+    // home button
+    else {
+        if(appDelegate.currentLang==Arabic)
+        {
+            [self  backHome];
+        }else{
+            [self showMenu];
+        }
+        
     }
 }
 @end

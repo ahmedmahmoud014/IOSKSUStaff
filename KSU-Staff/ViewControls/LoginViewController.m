@@ -47,12 +47,12 @@
 }
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
+  [self.navigationController setNavigationBarHidden:true animated:animated];
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
+   [self.navigationController setNavigationBarHidden:YES animated:animated];
 }
 
 - (void)viewDidLoad
@@ -84,14 +84,15 @@
                 [self onLanguagePressed:nil];
             appdelegate.currentLang=obj.userLang;
             useTouchID = obj.useTouchID;
-            
+            [self.navigationController setNavigationBarHidden:false animated:true];
+
             UIViewController * viewController = [self.storyboard instantiateViewControllerWithIdentifier:SeagueDashBoardScreen];
            [self.navigationController pushViewController:viewController animated:NO];
             
          //   [(UINavigationController *)self.window.rootViewController pushViewController:viewController animated:NO];
 
             
-         //   UINavigationController *navcont = [[UINavigationController alloc]  initWithRootViewController:viewController];
+//            UINavigationController *navcont = [[UINavigationController alloc]  initWithRootViewController:viewController];
 //            //[self presentViewController:navcont animated:YES];
 //            [navcont setModalPresentationStyle:UIModalPresentationFormSheet];
 //            [self presentViewController: navcont animated: YES completion: nil];

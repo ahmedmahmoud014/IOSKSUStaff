@@ -31,7 +31,7 @@ NSArray  *itemsNamesAll;
 
 
 NSArray  *allButtonColor;
-
+AppDelegate *appDelegate;
 
 CategoryItemDeTailsViewController *viewController;
 
@@ -39,8 +39,11 @@ CategoryItemDeTailsViewController *viewController;
     [super viewDidLoad];
     
     // Do any additional setup after loading the view.
-    [self customizeNavigationBar:YES WithMenu:YES];
+   // [self customizeNavigationBar:YES WithMenu:YES];
     
+   
+    // navigation  button  replace
+    [self replaceHomeAndMenu:_homeBtn :_menuBtn];
     if([self isNetworkAvailable] ==YES)
     {
         NSLog(@"Network Connection available");
@@ -63,7 +66,7 @@ CategoryItemDeTailsViewController *viewController;
         tableView.frame=CGRectMake(x, tableView.frame.origin.y, tableView.frame.size.width, tableView.frame.size.height);
     }
     self.titleLbl.text=  self.cat_Name;
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+     appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
 
     allOrderButtons =@[self.offer_order_new,self.offer_order_discount,self.offer_order_expire,self.offer_order_likes];
     allButtonColor=@[@0,@0,@0,@0];
@@ -73,9 +76,7 @@ CategoryItemDeTailsViewController *viewController;
     
 //        radioImageButtons =@[self.offer_order_new_image,self.offer_order_discount_image,self.offer_order_expire_image,self.like];
         itemsNamesAll= @[@"عرض جديد ",@"نسبة  الخصم ",@"تاريخ  الأنتهاء",@"مرات الأعجاب"];
-        for (UIButton *button in allOrderButtons ) {
-//            [self textAlligmentRight:button];
-        }
+        
         
     }
     else
@@ -92,15 +93,35 @@ CategoryItemDeTailsViewController *viewController;
 }
 
 
+//-(void)viewWillAppear:(BOOL)animated {
+//    [super viewWillAppear:animated];
+//    [self.navigationController setNavigationBarHidden:true animated:animated];
+//}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+}
+
+
 -(void)connect{
-    // get categories
-    [[RequestManager sharedInstance] getCategoryItems:self CatName:self.cat_URl];
-    [self showActivityViewer];
+    
+    if (_dataArray.count  !=   0   ){
+        dataArray =   _dataArray;
+        [tableView reloadData];
+    }else {
+        // get categories
+        [[RequestManager sharedInstance] getCategoryItems:self CatName:self.cat_URl];
+        [self showActivityViewer];
+    }
+   
 }
 - (void)processCompleted:(id)data error:(CustomError *)error withService:(NSNumber *)service {
     
     if(data!=nil)
     {
+        
+        
         
         dataArray = (NSMutableArray*)data;
         //dataArray = sortedArray;
@@ -113,6 +134,9 @@ CategoryItemDeTailsViewController *viewController;
             self.tableView .hidden= true;
             self.orderItems.hidden=true;
         }
+        
+        
+        printf("lllllllll",dataArray.count);
        
     }
     else{
@@ -135,17 +159,23 @@ CategoryItemDeTailsViewController *viewController;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self.navigationController setNavigationBarHidden:false animated:true];
+
     viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"CategoryItemDeTailsViewController"];
     
     CategoryListItems  *category = [dataArray objectAtIndex:indexPath.section];
     viewController.catItem = category;
     viewController.catName=self.cat_URl;
+    viewController.dataArray = dataArray;
+
+    
   //  NSLog(@"index row   %ld",indexPath.row);
     
-    [viewController setModalPresentationStyle:UIModalPresentationFormSheet];
-    [viewController setModalTransitionStyle: UIModalTransitionStyleFlipHorizontal];
+//    [viewController setModalPresentationStyle:UIModalPresentationFormSheet];
+//    [viewController setModalTransitionStyle: UIModalTransitionStyleFlipHorizontal];
     [self.navigationController pushViewController:viewController animated:NO];
-    // [self presentViewController:viewController animated:YES completion:nil]
+    
+    //[self presentViewController:viewController animated:YES completion:nil];
     // [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     
@@ -176,9 +206,11 @@ CategoryItemDeTailsViewController *viewController;
 //    UIColor *myColor= [self colorWithHexString:@"#252628"];
 //    cell.layer.borderColor= myColor.CGColor;
     //cell.layer.borderColor = [UIColor grayColor].CGColor;
+    if (dataArray.count != 0 ){
     CategoryListItems *items= [dataArray objectAtIndex:(int)indexPath.section];
     [cell initWithCatItemObj:items withRowId:(int)indexPath.section];
     [cell setNeedsLayout];
+    }
     return cell;
     
     // return nil;
@@ -237,6 +269,8 @@ CategoryItemDeTailsViewController *viewController;
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:true animated:true];
+
     if (radioImage .count == 0 )
     {
         radioImage =@[@"radio_btn.png",@"radio_btn.png",@"radio_btn.png",@"radio_btn.png"];
@@ -245,6 +279,7 @@ CategoryItemDeTailsViewController *viewController;
     [self buttonColor];
    
 }
+
 
 - (NSComparisonResult)compare:(CategoryListItems *)otherObject {
     return [self.title compare:otherObject.title];
@@ -258,6 +293,8 @@ CategoryItemDeTailsViewController *viewController;
     allButtonColor=@[@0,@0,@0,@0];
 
     if ( sender.tag == 0){
+        radioImage =@[@"radio_btn_selected.png",@"radio_btn.png",@"radio_btn.png",@"radio_btn.png"];
+
         [self orderAllItems:@"created" BOOL:@YES];
         NSLog(@"order value %@",@"cre");
        // radioImage =@[@"radio_btn_selected.png",@"radio_btn.png",@"radio_btn.png",@"radio_btn.png"];
@@ -266,6 +303,8 @@ CategoryItemDeTailsViewController *viewController;
 
     }
     else if (sender.tag == 1){
+        radioImage =@[@"radio_btn.png",@"radio_btn_selected.png",@"radio_btn.png",@"radio_btn.png"];
+
         [self orderAllItems:@"discount_perc" BOOL: NO];
         NSLog(@"order value %@",@"dis ");
        // radioImage =@[@"radio_btn.png",@"radio_btn_selected.png",@"radio_btn.png",@"radio_btn.png"];
@@ -274,6 +313,8 @@ CategoryItemDeTailsViewController *viewController;
 
     }
     else if (sender.tag == 2){
+        radioImage =@[@"radio_btn.png",@"radio_btn.png",@"radio_btn_selected.png",@"radio_btn.png"];
+
         [self orderAllItems:@"expiration_date" BOOL:@YES];
         NSLog(@"order value %@",@"ex");
         //radioImage =@[@"radio_btn.png",@"radio_btn.png",@"radio_btn_selected.png",@"radio_btn.png"];
@@ -294,7 +335,45 @@ CategoryItemDeTailsViewController *viewController;
 
 - (IBAction)showOrderList:(id)sender {
   [self.showListColor setImage:[UIImage imageNamed:@"sorting_selected"] forState:UIControlStateNormal];
-  
+    
+   
+    
+    for (int i = 0; i < allOrderButtons.count; i++)
+    {
+        UIButton *button =   allOrderButtons [i];
+        UIImageView*  imageView1 = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 25, 25)];
+        imageView1.image = [UIImage imageNamed:radioImage[i]];
+        
+        UIImageView*  imageView2 = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 25, 25)];
+        
+        if(appDelegate.currentLang==Arabic)
+        {
+            imageView1.center = CGPointMake(200 , button.frame.size.height / 2);
+            imageView2.center = CGPointMake(200 , button.frame.size.height / 2);
+
+        }else {
+            imageView1.center = CGPointMake(25 , button.frame.size.height / 2);
+            imageView2.center = CGPointMake(25 , button.frame.size.height / 2);
+        }
+        if ([radioImage[i]   isEqual:  @"radio_btn_selected.png"]){
+        imageView2.image = [UIImage imageNamed:@"gray_background"];
+
+        }else {
+        imageView2.image = [UIImage imageNamed:@"white_back"];
+        }
+        
+        
+//        for (UIImageView *subUIView in button.subviews) {
+//             [subUIView removeFromSuperview];
+//        }
+        
+//        [button setTitleColor:UIColor.redColor
+//                     forState:UIControlStateNormal];
+//        [button setTitle: itemsNamesAll[i] forState:UIControlStateNormal];
+        [button addSubview:imageView2];
+
+        [button addSubview:imageView1];
+    }
     [self viewWillAppear:true];
     
     if (dataArray.count != 0){
@@ -387,7 +466,8 @@ CategoryItemDeTailsViewController *viewController;
 }
 - (void) assignOrderName :(UIButton*) name NSString:value{
     [name setTitle: value forState:UIControlStateNormal];
-
+    
+    
 }
 //-(void)textAlligmentLeft:(UIButton*)button_name{
 //    button_name.contentHorizontalAlignment =UIControlContentHorizontalAlignmentLeft;
@@ -403,6 +483,36 @@ CategoryItemDeTailsViewController *viewController;
     [viewController setModalPresentationStyle:UIModalPresentationFormSheet];
     [viewController setModalTransitionStyle: UIModalTransitionStyleFlipHorizontal];
     [self.navigationController pushViewController:viewController animated:NO];
+}
+
+
+- (IBAction)btnHomeOrMenuPress:(UIButton *)sender {
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    UIButton *button = (UIButton *)sender;
+    NSInteger *tag  =  [button tag];
+    // menu button
+    if (tag ==  0 )  {
+        
+        if(appDelegate.currentLang==Arabic)
+        {
+            [self showMenu];
+        }else{
+            [self  backHome];
+        }
+        
+        
+        
+    }
+    // home button
+    else {
+        if(appDelegate.currentLang==Arabic)
+        {
+            [self  backHome];
+        }else{
+            [self showMenu];
+        }
+        
+    }
 }
 @end
 

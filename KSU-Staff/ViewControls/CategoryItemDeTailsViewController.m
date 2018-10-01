@@ -10,6 +10,7 @@
 #import "CategoryItemesViewController.h"
 #import "CategoryDetailsCollection.h"
 #import "ShowImageFullScreenViewController.h"
+#import "AppDelegate.h"
 
 #import "FLAnimatedImageView+WebCache.h"
 #import "UIImageView+WebCache.h"
@@ -19,28 +20,42 @@
 @synthesize itemName,like,disLike,itemDiscount,status,itemImage,statusImage;
 -(void)viewDidLoad{
     [super viewDidLoad];
-     [self customizeNavigationBar:YES WithMenu:YES];
+//     [self customizeNavigationBar:YES WithMenu:YES];
+    
+    // navigation  button  replace
+    [self replaceHomeAndMenu:_homeBtn :_menuBtn];
     
      [self initValues:self.catItem];
     
     
 }
+
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:true animated:animated];
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+   // [self.navigationController setNavigationBarHidden:NO animated:animated];
+}
 - (IBAction)back:(id)sender {
-    //    CategoryItemesViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"CategoryItemesViewController"];
-    //    viewController.cat_URl= self.catName;
-    //       [self.navigationController pushViewController:viewController animated:YES];
-    //
-    
    // [self dismissViewControllerAnimated:YES completion:nil];
+//    [self.navigationController setNavigationBarHidden:NO animated:true];
 
-    [self.navigationController popViewControllerAnimated:NO];
-
+    CategoryItemesViewController * viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"CategoryItemesViewController"];
     
+    viewController.dataArray =  self.dataArray ; 
+    [self.navigationController pushViewController:viewController animated:YES];
+    
+//    [self.navigationController popToRootViewControllerAnimated:YES];
+
 }
 
 -(void)initValues:(CategoryListItems *)catItem{
     catItem = self.catItem;
-    self.detailsName.title= catItem.title;
+    self.detailsName.text= catItem.title;
     itemName.text= catItem.title;
     //    NSString *str = @"hello ";
     //    str = [str stringByAppendingString:@"world"];
@@ -200,5 +215,34 @@
 
     }
     
+}
+
+- (IBAction)btnHomeOrMenuPress:(UIButton *)sender {
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    UIButton *button = (UIButton *)sender;
+    NSInteger *tag  =  [button tag];
+    // menu button
+    if (tag ==  0 )  {
+        
+        if(appDelegate.currentLang==Arabic)
+        {
+            [self showMenu];
+        }else{
+            [self  backHome];
+        }
+        
+        
+        
+    }
+    // home button
+    else {
+        if(appDelegate.currentLang==Arabic)
+        {
+            [self  backHome];
+        }else{
+            [self showMenu];
+        }
+        
+    }
 }
 @end

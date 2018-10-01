@@ -16,6 +16,10 @@
 #import "StaticFuntions.h"
 #import "Categories.h"
 #import "CategoryItemesViewController.h"
+#import "CustomNavigationController.h"
+#import "LoginViewController.h"
+#import "DashBoardViewController.h"
+
 
 #import "LocalizedMessages.h"
 
@@ -38,6 +42,11 @@ NSMutableArray *allCategoriesName;
         int y= 100;//(self.view.frame.size.height- collectionView.frame.size.height)/2;
         collectionView.frame=CGRectMake(x, y, collectionView.frame.size.width, collectionView.frame.size.height);
     }
+    
+    
+    
+    // navigation  button  replace
+    [self replaceHomeAndMenu:_homeBtn :_menuBtn];
     
     // [collectionView setTransform:CGAffineTransformMakeScale(-1, 1)];
     
@@ -86,10 +95,13 @@ NSMutableArray *allCategoriesName;
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:true animated:true];
+
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
+
     
 }
 
@@ -176,13 +188,17 @@ NSMutableArray *allCategoriesName;
     //    MyDashBoard mydash = (MyDashBoard)[[data objectAtIndex:indexPath.row] intValue] ;
     //    NSString *seagueName=[DashBoardObj getDBItemSeague:mydash];
     //    if(seagueName==nil)return;
+    
+   // [self.navigationController setNavigationBarHidden:NO animated:true];
+
     Categories  *category = [self.dataArray objectAtIndex:indexPath.row];
     CategoryItemesViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"CategoryItemesViewController"];
         viewController.cat_URl=category.url_title;
     viewController.cat_Name=category.fullName;
+    [self moveToNext:viewController];
 
     //
-    [self.navigationController pushViewController:viewController animated:NO];
+   // [self.navigationController pushViewController:viewController animated:NO];
     // AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
     
@@ -212,10 +228,41 @@ NSMutableArray *allCategoriesName;
     }
     
 }
+
+
+
 -(void)connect{
     // get categories
     [[RequestManager sharedInstance] getOffersCategories:self ];
     [self showActivityViewer];
+}
+- (IBAction)btnHomeOrMenuPress:(UIButton *)sender {
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+   UIButton *button = (UIButton *)sender;
+    NSInteger *tag  =  [button tag];
+    // menu button
+    if (tag ==  0 )  {
+        
+        if(appDelegate.currentLang==Arabic)
+        {
+            [self showMenu];
+        }else{
+          [self  backHome];
+        }
+        
+        
+        
+    }
+    // home button
+    else {
+        if(appDelegate.currentLang==Arabic)
+        {
+          [self  backHome];
+        }else{
+            [self showMenu];
+        }
+        
+    }
 }
 @end
 

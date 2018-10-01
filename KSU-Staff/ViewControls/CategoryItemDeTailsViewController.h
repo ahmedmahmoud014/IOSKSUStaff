@@ -44,9 +44,20 @@
 @property (nonatomic,retain) IBOutlet UIImageView *statusImage;
 @property (nonatomic, retain) CategoryListItems *catItem;
 @property (nonatomic, retain) NSString *catName;
+@property (nonatomic, retain)  NSMutableArray *dataArray;
+
 - (IBAction)back:(id)sender;
-@property (weak, nonatomic) IBOutlet UINavigationItem *detailsName;
+//@property (weak, nonatomic) IBOutlet UINavigationItem *detailsName;
+@property (weak, nonatomic) IBOutlet UILabel *detailsName;
 
 -(void) initValues :(CategoryListItems *)catItem;
+
+// for custom  menu  bar
+@property (weak, nonatomic) IBOutlet UIButton *menuBtn;
+@property (weak, nonatomic) IBOutlet UIButton *homeBtn;
+- (IBAction)btnHomeOrMenuPress:(UIButton *)sender;
+
+
+
 
 @end

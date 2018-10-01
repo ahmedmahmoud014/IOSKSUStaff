@@ -23,11 +23,20 @@
 }
 
 
+
+
 @property (nonatomic, strong) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, strong) NSMutableArray *dataArray;
 //
 @property (weak, nonatomic) IBOutlet UILabel *noData;
 
 @property (weak, nonatomic) IBOutlet UILabel *showServiceName;
+
+@property (weak, nonatomic) IBOutlet UIButton *menuBtn;
+@property (weak, nonatomic) IBOutlet UIButton *homeBtn;
+- (IBAction)btnHomeOrMenuPress:(UIButton *)sender;
+
+//-(void) showMenu;
+//-(void) backHome;
 
 @end

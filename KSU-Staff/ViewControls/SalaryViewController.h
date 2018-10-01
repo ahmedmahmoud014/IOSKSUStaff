@@ -111,4 +111,11 @@
 
 -(IBAction)onSendClaimPressed:(id)sender;
 -(IBAction)onClaimLstPressed:(id)sender;
+
+
+
+// for custom  menu  bar
+@property (weak, nonatomic) IBOutlet UIButton *menuBtn;
+@property (weak, nonatomic) IBOutlet UIButton *homeBtn;
+- (IBAction)btnHomeOrMenuPress:(UIButton *)sender;
 @end

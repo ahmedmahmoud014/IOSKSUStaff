@@ -33,6 +33,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self customizeNavigationBar:NO WithMenu:YES];
+    
+    // navigation  button  replace
+    [self replaceHomeAndMenu:_homeBtn :menuBtn];
    
     
     //TEST FILTER ARRAY
@@ -82,10 +85,15 @@
     
     if(appDelegate.currentLang==Arabic)
     {
+        [_homeBtn setHidden: true ];
+
         layout.alignment = NHAlignmentBottomRightAligned;
+        
     }
     else
     {
+        //menuBtn.isHidden   = true
+        [menuBtn setHidden: true ];
         layout.alignment = NHAlignmentTopLeftAligned;
     }
     
@@ -101,14 +109,19 @@
     
 
 }
+
+
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
 
 }
 
+
+
 -(void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
+   // [self.navigationController setNavigationBarHidden:YES animated:YES];
 
     if([repeatingTimer isValid])
         [repeatingTimer invalidate];
@@ -226,10 +239,15 @@
 }
 
 - (void) moveTo : (NSString *) seagueName  secondView: (MyDashBoard*)mydash {
+    [self.navigationController setNavigationBarHidden:false animated:true];
+
     if(seagueName==nil)return;
-    UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:seagueName];
+//    UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:seagueName];
+    printf("rrrrrrrrrrr",seagueName);
+//    [self.navigationController pushViewController:viewController animated:NO];
+    UIViewController * viewController = [self.storyboard instantiateViewControllerWithIdentifier:seagueName];
+    [self moveToNext:viewController];
     
-    [self.navigationController pushViewController:viewController animated:NO];
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     if(mydash==VacationsDB&& appDelegate.EmployeeObj.isTeacher){
         [((CalenderViewController*)viewController) changeToVacationCalender];
@@ -438,6 +456,35 @@
         
     }else{
         //[StaticFuntions showAlertWithTitle:ErrorGeneralTitle Message:error.errorMessage];
+    }
+}
+
+- (IBAction)btnHomeOrMenuPress:(UIButton *)sender {
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    UIButton *button = (UIButton *)sender;
+    NSInteger *tag  =  [button tag];
+    // menu button
+    if (tag ==  0 )  {
+        
+        if(appDelegate.currentLang==Arabic)
+        {
+            [self showMenu];
+        }else{
+            [self  backHome];
+        }
+        
+        
+        
+    }
+    // home button
+    else {
+        if(appDelegate.currentLang==Arabic)
+        {
+            [self  backHome];
+        }else{
+            [self showMenu];
+        }
+        
     }
 }
 @end

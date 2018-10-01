@@ -38,14 +38,27 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self customizeNavigationBar:YES WithMenu:YES];
+    
+    
+    // navigation  button  replace
+    [self replaceHomeAndMenu:_homeBtn :_menuBtn];
 }
+
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:true animated:animated];
+}
 
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+}
 /*
  #pragma mark - Navigation
  
@@ -259,6 +272,37 @@
 //        [StaticFuntions showAlertWithTitle:ErrorGeneralTitle Message:error.errorMessage];
 //        
 //    }
+}
+
+// custom  navigation  bar
+
+- (IBAction)btnHomeOrMenuPress:(UIButton *)sender {
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    UIButton *button = (UIButton *)sender;
+    NSInteger *tag  =  [button tag];
+    // menu button
+    if (tag ==  0 )  {
+        
+        if(appDelegate.currentLang==Arabic)
+        {
+            [self showMenu];
+        }else{
+            [self  backHome];
+        }
+        
+        
+        
+    }
+    // home button
+    else {
+        if(appDelegate.currentLang==Arabic)
+        {
+            [self  backHome];
+        }else{
+            [self showMenu];
+        }
+        
+    }
 }
 
 @end

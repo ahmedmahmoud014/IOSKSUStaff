@@ -11,7 +11,8 @@
 #import "CategoryListItems.h"
 @implementation CategoryListItems
 @synthesize title,status,created,description,expiration_date,offer_url,contact, benf,discount_perc,likes,dislikes,keywords,slide_images;
--(void)initWithCatItemName:(NSString *)title status:(NSString *)status created:(NSString *)created description:(NSString *)description expiration_date:(NSString *)expiration_date offer_url:(NSString *)offer_url contact:(Contact *)contact benf:(NSString *)benf discount_perc:(NSNumber *)discount_perc likes:(NSNumber *)likes dislikes:(NSNumber *)dislikes keywords:(NSArray *)keywords slide_images:(NSMutableArray *)slide_images{
+-(void)
+initWithCatItemName:(NSString *)title status:(NSString *)status created:(NSString *)created description:(NSString *)description expiration_date:(NSString *)expiration_date offer_url:(NSString *)offer_url contact:(Contact *)contact benf:(NSString *)benf discount_perc:(NSNumber *)discount_perc likes:(NSNumber *)likes dislikes:(NSNumber *)dislikes keywords:(NSArray *)keywords slide_images:(NSMutableArray *)slide_images{
     self.title=title;
     self.status=status;
     self.created=created;

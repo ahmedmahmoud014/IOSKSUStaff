@@ -29,6 +29,7 @@
 -(void)switchToLeftLayout;
 -(void)locatizeLables;
 -(BOOL)isNetworkAvailable;
+-(void )moveToNext :(UIViewController*) vcName ;
 
 
 
@@ -41,6 +42,14 @@
 
 - (void)refresh:(UIRefreshControl *)refreshControl_;
 -(void)initRefreshControl:(UITableView*)tableView;
+
+
+//for custom  navigation  bar
+-(void) showMenu;
+-(void) backHome;
+
+- (void)  replaceHomeAndMenu :  (UIButton *) homeBtn : (UIButton *) menuBtn ;
+
 
 @end
 

@@ -23,7 +23,11 @@
 @property (nonatomic, strong) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, strong) NSArray *dataArray;
 
+@property (nonatomic, strong) IBOutlet UIButton *homeBtn;
 @property (nonatomic, strong) IBOutlet UIButton *menuBtn;
+- (IBAction)btnHomeOrMenuPress:(UIButton *)sender;
+
+
 @property (nonatomic, strong) IBOutlet UILabel *copyrightsLbl;
 
 @end
